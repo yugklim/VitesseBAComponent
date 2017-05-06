@@ -1,5 +1,6 @@
 import React, { PropTypes, Component } from 'react'
 import ReactDOM from 'react-dom'
+import VitesseBAField from './VitesseBAField'
 //import './VitesseBA.less';
 
 export default class VitesseBAFields extends Component {
@@ -15,7 +16,7 @@ export default class VitesseBAFields extends Component {
         <div>
           {
             fields.map(function (val, idx) {
-              return (<div>{val.Path}</div>);
+              return (<div>{val.Path} -> <VitesseBAField pars={val}></VitesseBAField></div>);
             })
           }
         </div>);
