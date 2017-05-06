@@ -1,5 +1,7 @@
 import React, { PropTypes, Component } from 'react'
 import ReactDOM from 'react-dom'
+//import {_} from '.\\node_modules\\underscore'
+import {_} from './node_modules/underscore'
 // import VitesseBAFields from './VitesseBAFields'
 //import './VitesseBA.less';
 
@@ -13,8 +15,9 @@ export default class VitesseBA extends Component {
         if (response.ok) {
           response.json().then((data) => {
             console.log(data);
-            let x2 = "DDDD"
-            let x = <VitesseBAFields field={x2}></VitesseBAFields>;//new VitesseBAFields();
+            let x2 = "DDDD";
+            let baFields = _.filter(data, (value, index, list) => {return true});
+            let x = <VitesseBAFields fields={baFields}></VitesseBAFields>;//new VitesseBAFields();
             ReactDOM.render(
               // React.createElement('VitesseBAFields',null,null),
               x,
@@ -43,14 +46,18 @@ class VitesseBAFields extends Component {
 
   render() {
     const { field, fields } = this.props;
-    // if (!fields)
-    // {
-    //   return (<div></div>);
-    // }
-    // else
+    if (!fields)
+    {
+      return (<div>No BA Fields</div>);
+    }
+    else
     return (
       <div>
-        { field }
+        {
+          fields.map(function (val, idx) {
+            return (<div>1</div>);
+          })
+        }
       </div>);
   }
 }
