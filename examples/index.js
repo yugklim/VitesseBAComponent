@@ -3,4 +3,4 @@ import { render } from 'react-dom'
 import  VitesseBA  from '../src/VitesseBA.js'
 
 
-render(<VitesseBA>asdsdwwwwwS</VitesseBA>,  document.getElementById('vitesseBA'));
+render(<VitesseBA></VitesseBA>,  document.getElementById('vitesseBA'));

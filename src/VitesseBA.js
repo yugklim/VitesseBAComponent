@@ -15,13 +15,10 @@ export default class VitesseBA extends Component {
       }).then((response) => {
         if (response.ok) {
           response.json().then((data) => {
-            console.log(data);
-            let x2 = "DDDD";
             let baFields = extractBAFields(data);
-            let x = <VitesseBAFields fields={baFields}></VitesseBAFields>;//new VitesseBAFields();
             ReactDOM.render(
               // React.createElement('VitesseBAFields',null,null),
-              x,
+              <VitesseBAFields fields={baFields}></VitesseBAFields>,
               document.getElementById('vitesseBAFields')
             );
 

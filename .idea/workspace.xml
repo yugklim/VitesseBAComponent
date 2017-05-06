@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="910b1bc5-a927-4f12-8a47-46e3f785f5b0" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/VitesseBAFields.js" afterPath="$PROJECT_DIR$/src/VitesseBAFields.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/examples/index.js" afterPath="$PROJECT_DIR$/examples/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/VitesseBA.js" afterPath="$PROJECT_DIR$/src/VitesseBA.js" />
     </list>
     <ignored path="VitesseBAComponent.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -28,8 +29,8 @@
       <file leaf-file-name="VitesseBA.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/VitesseBA.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="242">
-              <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+            <state relative-caret-position="22">
+              <caret line="1" column="32" selection-start-line="1" selection-start-column="32" selection-end-line="1" selection-end-column="32" />
               <folding>
                 <element signature="e#0#51#0" expanded="true" />
                 <element signature="e#131#159#0" expanded="true" />
@@ -90,7 +91,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="VitesseBAField.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="VitesseBAField.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/VitesseBAField.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="110">
@@ -110,11 +111,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/examples/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="66">
-              <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+            <state relative-caret-position="110">
+              <caret line="5" column="18" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="18" />
               <folding>
                 <element signature="e#0#25#0" expanded="true" />
               </folding>
@@ -168,14 +169,14 @@
         <option value="$PROJECT_DIR$/.babelrc" />
         <option value="$PROJECT_DIR$/examples/index.html" />
         <option value="$PROJECT_DIR$/examples/webpack.config.js" />
-        <option value="$PROJECT_DIR$/examples/index.js" />
         <option value="$PROJECT_DIR$/examples/server.js" />
         <option value="$PROJECT_DIR$/examples/package.json" />
         <option value="$PROJECT_DIR$/src/package.json" />
-        <option value="$PROJECT_DIR$/src/VitesseBA.js" />
         <option value="$PROJECT_DIR$/src/utilities/extractBAFields.js" />
         <option value="$PROJECT_DIR$/src/VitesseBAFields.js" />
         <option value="$PROJECT_DIR$/src/VitesseBAField.js" />
+        <option value="$PROJECT_DIR$/src/VitesseBA.js" />
+        <option value="$PROJECT_DIR$/examples/index.js" />
       </list>
     </option>
   </component>
@@ -401,12 +402,12 @@
       <workItem from="1493926514862" duration="155000" />
       <workItem from="1493927208823" duration="2969000" />
       <workItem from="1494051499174" duration="5386000" />
-      <workItem from="1494070678404" duration="4926000" />
+      <workItem from="1494070678404" duration="5659000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="39700000" />
+    <option name="totallyTimeSpent" value="40433000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1456" height="876" extended-state="6" />
@@ -745,16 +746,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/examples/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#25#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/node_modules/underscore/LICENSE" />
     <entry file="file://$PROJECT_DIR$/src/node_modules/underscore/package.json" />
     <entry file="file://$PROJECT_DIR$/src/node_modules/underscore/README.md" />
@@ -799,17 +790,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/VitesseBA.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#51#0" expanded="true" />
-            <element signature="e#131#159#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/VitesseBAFields.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
@@ -820,11 +800,32 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/VitesseBA.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="1" column="32" selection-start-line="1" selection-start-column="32" selection-end-line="1" selection-end-column="32" />
+          <folding>
+            <element signature="e#0#51#0" expanded="true" />
+            <element signature="e#131#159#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/VitesseBAField.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="110">
           <caret line="5" column="96" selection-start-line="5" selection-start-column="96" selection-end-line="5" selection-end-column="96" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/examples/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="5" column="18" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="18" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
