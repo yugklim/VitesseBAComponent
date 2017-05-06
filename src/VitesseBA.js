@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom'
 //import {_} from './node_modules/underscore'
 import {_} from 'underscore'
 import VitesseBAFields from './VitesseBAFields'
+import extractBAFields from './utilities/extractBAFields'
 //import './VitesseBA.less';
 
 export default class VitesseBA extends Component {
@@ -16,7 +17,7 @@ export default class VitesseBA extends Component {
           response.json().then((data) => {
             console.log(data);
             let x2 = "DDDD";
-            let baFields = _.filter(data, (value, index, list) => {return true});
+            let baFields = extractBAFields(data);
             let x = <VitesseBAFields fields={baFields}></VitesseBAFields>;//new VitesseBAFields();
             ReactDOM.render(
               // React.createElement('VitesseBAFields',null,null),

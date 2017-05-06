@@ -15,7 +15,7 @@ export default class VitesseBAFields extends Component {
         <div>
           {
             fields.map(function (val, idx) {
-              return (<div>1</div>);
+              return (<div>{val.Path}</div>);
             })
           }
         </div>);
