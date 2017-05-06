@@ -2,7 +2,7 @@ import React, { PropTypes, Component } from 'react'
 import ReactDOM from 'react-dom'
 //import {_} from './node_modules/underscore'
 import {_} from 'underscore'
-// import VitesseBAFields from './VitesseBAFields'
+import VitesseBAFields from './VitesseBAFields'
 //import './VitesseBA.less';
 
 export default class VitesseBA extends Component {
@@ -42,7 +42,7 @@ export default class VitesseBA extends Component {
   }
 }
 
-class VitesseBAFields extends Component {
+class VitesseBAFields2 extends Component {
 
   render() {
     const { field, fields } = this.props;
