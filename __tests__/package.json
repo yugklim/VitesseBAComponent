@@ -9,6 +9,10 @@
   },
   "jest": {
     "rootDir": "../",
+    "testPathIgnorePatterns": [
+      "/node_modules/",
+      "<rootDir>/__tests__/webpack.config.js"
+    ],
     "transform": {
       ".*": "<rootDir>/__tests__/node_modules/babel-jest"
     },
@@ -20,7 +24,7 @@
       "jsx"
     ],
     "moduleNameMapper": {
-      "underscore": "<rootDir>/tests/node_modules/underscore",
+      "underscore": "<rootDir>/examples/node_modules/underscore",
       "enzyme": "<rootDir>/tests/node_modules/enzyme",
       "sinon": "<rootDir>/tests/node_modules/sinon"
     }

@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom'
 //import {_} from './node_modules/underscore'
 import {_} from 'underscore'
 import VitesseBAFields from './VitesseBAFields'
-import extractBAFields from './utilities/extractBAFields'
+import extractBAFields from './utilities/extractBAChunks'
 //import './VitesseBA.less';
 
 export default class VitesseBA extends Component {
