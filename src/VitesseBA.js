@@ -13,30 +13,30 @@ export default class VitesseBA extends Component {
       {
         method: 'get',
       }).then((response) => {
-        if (response.ok) {
-          response.json().then((data) => {
-            let baFields = extractBAFields(data);
-            ReactDOM.render(
-              // React.createElement('VitesseBAFields',null,null),
-              <VitesseBAFields fields={baFields}></VitesseBAFields>,
-              document.getElementById('vitesseBAFields')
-            );
+      if (response.ok) {
+        response.json().then((data) => {
+          let baFields = extractBAFields(data);
+          ReactDOM.render(
+            // React.createElement('VitesseBAFields',null,null),
+            <VitesseBAFields fields={baFields}></VitesseBAFields>,
+            document.getElementById('vitesseBAFields')
+          );
 
-          });
-        } else {
-          console.error('Network error - ' + response);
-        }
-      }).catch(function(err) {
-        console.error(err);
-      });
+        });
+      } else {
+        console.error('Network error - ' + response);
+      }
+    }).catch(function(err) {
+      console.error(err);
+    });
   }
 
   render() {
     return (
-    <div className="MyComponent">
-      <input type='button' value="Rules" onClick={::this.getFields}/>
-      <div id="vitesseBAFields"></div>
-    </div>);
+      <div className="MyComponent">
+        <input type='button' value="Rules" onClick={::this.getFields}/>
+        <div id="vitesseBAFields"></div>
+      </div>);
   }
 }
 
