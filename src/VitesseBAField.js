@@ -20,7 +20,7 @@ import React, { PropTypes, Component } from 'react'
 
 
 
-const VitesseBAField = ({ pars, validators, idx, form }) =>
+const VitesseBAField = ({ pars, validator, idx, form }) =>
 {
     if (!pars.Field)
       {
@@ -30,11 +30,11 @@ const VitesseBAField = ({ pars, validators, idx, form }) =>
       let field = pars.Field;
       return (
         <div>
-          <label htmlFor={validators[field].id} >
-            {validators[field].label}
+          <label htmlFor={validator.id} >
+            {validator.label}
           </label>
-          <input {...validators[field].bind} />
-          <p >{validators[field].error}</p>
+          <input {...validator.bind} />
+          <p >{validator.error}</p>
 
         </div>
       )};

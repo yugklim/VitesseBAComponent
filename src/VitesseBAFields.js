@@ -1,10 +1,10 @@
 import React, { PropTypes, Component } from 'react'
 import ReactDOM from 'react-dom'
 import VitesseBAField from './VitesseBAField'
-
 import MobxReactForm from 'mobx-react-form';
 import { observer } from 'mobx-react';
 import validatorjs from 'validatorjs';
+import getValidators from './utilities/validation'
 
 const fields2 = {
   email: {
@@ -73,15 +73,17 @@ const VitesseBAFields = observer(
     }
     else {
 
-      let validators = [];
-      for (let index = 0; index < fields.length; ++index) {
-        let field = fields[index];
-        validators[field.Field] = {};
-        validators[field.Field].bind = form.$(field.Field).bind();
-        validators[field.Field].id = form.$(field.Field).id;
-        validators[field.Field].label = form.$(field.Field).label;
-        validators[field.Field].error = form.$(field.Field).error;
-      }
+      // let validators = [];
+      // for (let index = 0; index < fields.length; ++index) {
+      //   let field = fields[index];
+      //   validators[field.Field] = {};
+      //   validators[field.Field].bind = form.$(field.Field).bind();
+      //   validators[field.Field].id = form.$(field.Field).id;
+      //   validators[field.Field].label = form.$(field.Field).label;
+      //   validators[field.Field].error = form.$(field.Field).error;
+      // }
+
+      let validators = getValidators(fields, form);
 
       let emBind = form.$('email').bind();
 
@@ -104,9 +106,9 @@ const VitesseBAFields = observer(
           </div>
 
           {
-            fields.map(function (val, idx) {
+            fields.map(function (field, idx) {
               //return (<div>{val.Path} -> <VitesseBAField pars={val} form={form}></VitesseBAField></div>);
-              return (<VitesseBAField pars={val} validators={validators} idx={idx} form={form}></VitesseBAField>);
+              return (<VitesseBAField pars={field} validator={validators[field.Field]} idx={idx} form={form}></VitesseBAField>);
             })
           }
 
