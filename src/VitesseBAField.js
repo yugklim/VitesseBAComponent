@@ -1,5 +1,6 @@
 import React, { PropTypes, Component } from 'react'
 
+
 // export default class VitesseBAField extends Component {
 //
 //   render() {
@@ -17,17 +18,27 @@ import React, { PropTypes, Component } from 'react'
 
 //const Button = ({ color, children }) => <button style={{ background: color }}>{children}</button>;
 
-const VitesseBAField =
-  ({ pars }) =>
+
+
+const VitesseBAField = ({ pars, binds, idx, form }) =>
 {
-  if (!pars.Field)
-    {
-      return (<div></div>);
-    }
-    else
+    if (!pars.Field)
+      {
+        return (<div></div>);
+      }
+    else {
+      let x = pars.Field;
+      let y = form.$(x);
       return (
-        <div>{pars.FieldName}:<input type="text"/></div>
-      );
+        <div>
+          <label htmlFor={binds[x].id} >
+            {binds[x].label}
+          </label>
+          <input {...binds[x].bind} />
+          <p >{binds[x].error}</p>
+
+        </div>
+      )};
 };
 
 export default VitesseBAField
