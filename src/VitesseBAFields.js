@@ -6,33 +6,67 @@ import MobxReactForm from 'mobx-react-form';
 import { observer } from 'mobx-react';
 import validatorjs from 'validatorjs';
 
+const fields2 = {
+  email: {
+    label: 'email',
+    placeholder: 'Insert Email',
+    rules: 'required|email|string|between:5,25',
+  },
 
-//import './VitesseBA.less';
+  password: {
+    label: 'Password',
+    placeholder: 'Insert Password',
+    rules: 'required|email|string|between:1,25',
+  },
 
-// export default class VitesseBAFields extends Component {
-//
-//   render() {
-//     const { field, fields } = this.props;
-//     if (!fields)
-//     {
-//       return (<div>No BA Fields</div>);
-//     }
-//     else
-//       return (
-//         <div>
-//           {
-//             fields.map(function (val, idx) {
-//               return (<div>{val.Path} -> <VitesseBAField pars={val}></VitesseBAField></div>);
-//             })
-//           }
-//         </div>);
-//   }
-// }
+  SwiftCode: {
+    label: 'SwiftCode',
+    placeholder: 'Insert Email',
+    rules: 'required|email|string|between:1,25',
+  },
+
+  AccountNumber: {
+    label: 'AccountNumber',
+    placeholder: 'Insert Email',
+    rules: 'required|string|between:1,25',
+  },
+
+  BsbCode: {
+    label: 'BsbCode',
+    placeholder: 'Insert Email',
+    rules: 'required|string|between:1,25',
+  },
+
+  PaymentPurpose: {
+    label: 'PaymentPurpose',
+    placeholder: 'Insert Email',
+    rules: 'required|string|between:1,25',
+  }
+
+
+};
+class LoginForm extends MobxReactForm {
+
+  onSuccess(form) {
+    alert('Form is valid! Send the request here.');
+    // get field values
+    console.log('Form Values!', form.values());
+  }
+
+  onError(form) {
+    // get all form errors
+    console.log('All form errors', form.errors());
+    // invalidate the form with a custom error message
+    form.invalidate('This is a generic error message!');
+  }
+};
+const plugins = { dvr: validatorjs };
+const form = new LoginForm({ fields: fields2 }, { plugins });
+
 
 const VitesseBAFields = observer(
-  ({ fields, form }) =>
+  ({ fields }) =>
   {
-    //let b = form.$('email');
     if (!fields)
     {
       return (<div>No BA Fields</div>);
