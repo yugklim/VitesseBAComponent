@@ -38,15 +38,15 @@ const VitesseBAFields = observer(
       return (<div>No BA Fields</div>);
     }
     else {
-      let binds = [];
 
+      let validators = [];
       for (let index = 0; index < fields.length; ++index) {
         let field = fields[index];
-        binds[field.Field] = {};
-        binds[field.Field].bind = form.$(field.Field).bind();
-        binds[field.Field].id = form.$(field.Field).id;
-        binds[field.Field].label = form.$(field.Field).label;
-        binds[field.Field].error = form.$(field.Field).error;
+        validators[field.Field] = {};
+        validators[field.Field].bind = form.$(field.Field).bind();
+        validators[field.Field].id = form.$(field.Field).id;
+        validators[field.Field].label = form.$(field.Field).label;
+        validators[field.Field].error = form.$(field.Field).error;
       }
 
       let emBind = form.$('email').bind();
@@ -72,7 +72,7 @@ const VitesseBAFields = observer(
           {
             fields.map(function (val, idx) {
               //return (<div>{val.Path} -> <VitesseBAField pars={val} form={form}></VitesseBAField></div>);
-              return (<VitesseBAField pars={val} binds={binds} idx={idx} form={form}></VitesseBAField>);
+              return (<VitesseBAField pars={val} validators={validators} idx={idx} form={form}></VitesseBAField>);
             })
           }
 
