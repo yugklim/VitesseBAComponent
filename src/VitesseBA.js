@@ -1,7 +1,7 @@
 import React, { PropTypes, Component } from 'react'
 import ReactDOM from 'react-dom'
 //import {_} from './node_modules/underscore'
-import {_} from 'underscore'
+import {_} from 'lodash'
 import VitesseBAFields from './VitesseBAFields'
 import extractBAFields from './utilities/extractBAChunks'
 //import './VitesseBA.less';

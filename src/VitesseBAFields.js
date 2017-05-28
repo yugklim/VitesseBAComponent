@@ -4,47 +4,9 @@ import VitesseBAField from './VitesseBAField'
 import MobxReactForm from 'mobx-react-form';
 import { observer } from 'mobx-react';
 import validatorjs from 'validatorjs';
-import getValidators from './utilities/validation'
+import { getValidators, getFormFields } from './utilities/validation'
 
-const fields2 = {
-  email: {
-    label: 'email',
-    placeholder: 'Insert Email',
-    rules: 'required|email|string|between:5,25',
-  },
-
-  password: {
-    label: 'Password',
-    placeholder: 'Insert Password',
-    rules: 'required|email|string|between:1,25',
-  },
-
-  SwiftCode: {
-    label: 'SwiftCode',
-    placeholder: 'Insert Email',
-    rules: 'required|email|string|between:1,25',
-  },
-
-  AccountNumber: {
-    label: 'AccountNumber',
-    placeholder: 'Insert Email',
-    rules: 'required|string|between:1,25',
-  },
-
-  BsbCode: {
-    label: 'BsbCode',
-    placeholder: 'Insert Email',
-    rules: 'required|string|between:1,25',
-  },
-
-  PaymentPurpose: {
-    label: 'PaymentPurpose',
-    placeholder: 'Insert Email',
-    rules: 'required|string|between:1,25',
-  }
-
-
-};
+const plugins = { dvr: validatorjs };
 class LoginForm extends MobxReactForm {
 
   onSuccess(form) {
@@ -60,9 +22,7 @@ class LoginForm extends MobxReactForm {
     form.invalidate('This is a generic error message!');
   }
 };
-const plugins = { dvr: validatorjs };
-const form = new LoginForm({ fields: fields2 }, { plugins });
-
+const form = new LoginForm({ fields: getFormFields() }, { plugins });
 
 const VitesseBAFields = observer(
   ({ fields }) =>
@@ -72,22 +32,9 @@ const VitesseBAFields = observer(
       return (<div>No BA Fields</div>);
     }
     else {
-
-      // let validators = [];
-      // for (let index = 0; index < fields.length; ++index) {
-      //   let field = fields[index];
-      //   validators[field.Field] = {};
-      //   validators[field.Field].bind = form.$(field.Field).bind();
-      //   validators[field.Field].id = form.$(field.Field).id;
-      //   validators[field.Field].label = form.$(field.Field).label;
-      //   validators[field.Field].error = form.$(field.Field).error;
-      // }
-
       let validators = getValidators(fields, form);
-
       let emBind = form.$('email').bind();
-
-      let x =
+      return (
         <form>
           <div>
             <label htmlFor={form.$('email').id}>
@@ -117,8 +64,7 @@ const VitesseBAFields = observer(
           <button type="button" onClick={form.onClear}>Clear</button>
 
           <p>{form.error}</p>
-        </form>;
-      return x;
+        </form>);
     }
   });
 
