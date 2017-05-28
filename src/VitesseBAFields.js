@@ -4,54 +4,24 @@ import VitesseBAField from './VitesseBAField'
 import MobxReactForm from 'mobx-react-form';
 import { observer } from 'mobx-react';
 import validatorjs from 'validatorjs';
-import { getValidators, getFormFields } from './utilities/validation'
+import { getValidators, getFormFields, getFormFields2 } from './utilities/validation'
 
-const plugins = { dvr: validatorjs };
-class LoginForm extends MobxReactForm {
 
-  onSuccess(form) {
-    alert('Form is valid! Send the request here.');
-    // get field values
-    console.log('Form Values!', form.values());
-  }
-
-  onError(form) {
-    // get all form errors
-    console.log('All form errors', form.errors());
-    // invalidate the form with a custom error message
-    form.invalidate('This is a generic error message!');
-  }
-};
-const form = new LoginForm({ fields: getFormFields() }, { plugins });
 
 const VitesseBAFields = observer(
-  ({ fields }) =>
+  ({ fields, form }) =>
   {
+    //form = new LoginForm({ fields: getFormFields2() }, { plugins });
+    //form.state.initial.props.values = getFormFields(fields);
     if (!fields)
     {
       return (<div>No BA Fields</div>);
     }
     else {
+
       let validators = getValidators(fields, form);
-      let emBind = form.$('email').bind();
       return (
         <form>
-          <div>
-            <label htmlFor={form.$('email').id}>
-              {form.$('email').label}
-            </label>
-            <input {...emBind } />
-            <p>{form.$('email').error}</p>
-          </div>
-
-          <div>
-            <label htmlFor={form.$('password').id}>
-              {form.$('password').label}
-            </label>
-            <input {...form.$('password').bind()} />
-            <p>{form.$('password').error}</p>
-          </div>
-
           {
             fields.map(function (field, idx) {
               //return (<div>{val.Path} -> <VitesseBAField pars={val} form={form}></VitesseBAField></div>);

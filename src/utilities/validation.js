@@ -11,11 +11,23 @@ export function getValidators(fields, form) {
   return validators;
 }
 
-export function getFormFields2(fields) {
-  return {}
+export function getFormFields(fields) {
+  let retVal = {};
+  _.forEach(fields, (field) => {
+    retVal[field.Field] = getFormField(field)
+  })
+  return retVal;
 }
 
-export function getFormFields() {
+function getFormField(field) {
+  return {
+    label: field.FieldName,
+    placeholder: `Insert ${field.FieldName}`,
+    rules: 'required|email|string|between:5,25'
+  }
+}
+
+export function getFormFields2() {
   return {
     email: {
       label: 'email',
