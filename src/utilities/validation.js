@@ -33,7 +33,7 @@ function getFormField(field) {
 export function validationRules(field) {
   let rules = {
       required:  field.Options === 'Mandatory',
-      alpha_num: _.some(['AlphaNumeric', 'ExtendedAlphaNumeric'], field.Type),
+      alpha_num: field.Type === 'AlphaNumeric' || field.Type === 'ExtendedAlphaNumeric',
       numeric:   field.Type === 'Numeric'
   }
 
