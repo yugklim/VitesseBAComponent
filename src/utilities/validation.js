@@ -1,3 +1,5 @@
+import _ from 'lodash'
+
 export function getValidators(fields, form) {
   let validators = [];
   for (let index = 0; index < fields.length; ++index) {
@@ -23,8 +25,32 @@ function getFormField(field) {
   return {
     label: field.FieldName,
     placeholder: `Insert ${field.FieldName}`,
-    rules: 'required|email|string|between:5,25'
+    rules: validationRules(field)
+      //'required|email|string|between:5,25'
   }
+}
+
+export function validationRules(field) {
+  let rules = {
+      required:  field.Options === 'Mandatory',
+      alpha_num: _.some(['AlphaNumeric', 'ExtendedAlphaNumeric'], field.Type),
+      numeric:   field.Type === 'Numeric'
+  }
+
+  let minLength = field.MinimumLength;
+  let maxLength = field.MaximumLength;
+
+  let retVal = '';
+  for (var key in rules){
+    retVal += `${rules[key]?`${key}|`:''}`;
+  }
+
+  // for numeric must be min max
+  // if (minLength && maxLength) {
+  //   retVal += `between:${minLength},${maxLength}`;
+  // }
+
+  return retVal;
 }
 
 export function getFormFields2() {
