@@ -44,6 +44,9 @@ export function validationRules(field) {
   for (var key in rules){
     retVal += `${rules[key]?`${key}|`:''}`;
   }
+  if (_.endsWith(retVal, '|') === true) {
+    retVal = retVal.substring(0, retVal.length-1)
+  }
 
   // for numeric must be min max
   // if (minLength && maxLength) {
