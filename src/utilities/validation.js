@@ -31,67 +31,31 @@ function getFormField(field) {
 }
 
 export function validationRules(field) {
-  let rules = {
+  let presenceRules = {
       required:  field.Options === 'Mandatory',
       alpha_num: field.Type === 'AlphaNumeric' || field.Type === 'ExtendedAlphaNumeric',
-      numeric:   field.Type === 'Numeric'
+      numeric:   field.Type === 'Numeric',
+
   }
 
-  let minLength = field.MinimumLength;
-  let maxLength = field.MaximumLength;
+  let valueRules = {
+      min:       field.MinimumLength,
+      max:       field.MaximumLength
+  }
 
   let retVal = '';
-  for (var key in rules){
-    retVal += `${rules[key]?`${key}|`:''}`;
+  for (var key in presenceRules){
+    retVal += `${presenceRules[key]?`${key}|`:''}`;
   }
+
+  for (var key in valueRules){
+    retVal += `${valueRules[key]?`${key}:${valueRules[key]}|`:''}`;
+  }
+
   if (_.endsWith(retVal, '|') === true) {
     retVal = retVal.substring(0, retVal.length-1)
   }
 
-  // for numeric must be min max
-  // if (minLength && maxLength) {
-  //   retVal += `between:${minLength},${maxLength}`;
-  // }
-
   return retVal;
 }
 
-export function getFormFields2() {
-  return {
-    email: {
-      label: 'email',
-      placeholder: 'Insert Email',
-      rules: 'required|email|string|between:5,25',
-    },
-
-    password: {
-      label: 'Password',
-      placeholder: 'Insert Password',
-      rules: 'required|email|string|between:1,25',
-    },
-
-    SwiftCode: {
-      label: 'SwiftCode',
-      placeholder: 'Insert Email',
-      rules: 'required|email|string|between:1,25',
-    },
-
-    AccountNumber: {
-      label: 'AccountNumber',
-      placeholder: 'Insert Email',
-      rules: 'required|string|between:1,25',
-    },
-
-    BsbCode: {
-      label: 'BsbCode',
-      placeholder: 'Insert Email',
-      rules: 'required|string|between:1,25',
-    },
-
-    PaymentPurpose: {
-      label: 'PaymentPurpose',
-      placeholder: 'Insert Email',
-      rules: 'required|string|between:1,25',
-    }
-  };
-}
