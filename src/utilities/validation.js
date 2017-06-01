@@ -33,12 +33,11 @@ function getFormField(field) {
 export function validationRules(field) {
   let presenceRules = {
       required:  field.Options === 'Mandatory',
-      alpha_num: field.Type === 'AlphaNumeric' || field.Type === 'ExtendedAlphaNumeric',
-      numeric:   field.Type === 'Numeric',
-
+      alpha_num: field.FieldType === 'AlphaNumeric' || field.FieldType === 'ExtendedAlphaNumeric',
+      numeric:   field.FieldType === 'Numeric'
   }
 
-  let valueRules = {
+  let minMaxRules = {
       min:       field.MinimumLength,
       max:       field.MaximumLength
   }
@@ -48,14 +47,22 @@ export function validationRules(field) {
     retVal += `${presenceRules[key]?`${key}|`:''}`;
   }
 
-  for (var key in valueRules){
-    retVal += `${valueRules[key]?`${key}:${valueRules[key]}|`:''}`;
+  if (presenceRules.alpa_num === true){
+    for (var key in minMaxRules){
+      retVal += `${minMaxRules[key]?`${key}:${minMaxRules[key]}|`:''}`;
+    }
+  }
+  else if (presenceRules.numeric === true && (minMaxRules.min || minMaxRules.max)){
+      let min = minMaxRules.min || 0;
+      let max = minMaxRules.max || Number.MAX_SAFE_INTEGER;
+      retVal += `regex:/^[0-9]{${min},${max}}$/`
   }
 
   if (_.endsWith(retVal, '|') === true) {
     retVal = retVal.substring(0, retVal.length-1)
   }
 
+  //return ['required', 'regex:/^[0-9]{2,4}$/']
   return retVal;
 }
 
