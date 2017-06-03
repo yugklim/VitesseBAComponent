@@ -23,11 +23,34 @@ export function getFormFields(fields) {
 
 function getFormField(field) {
   return {
-    label: field.FieldName,
+    label: field.FieldName + lengthInformation(field),
     placeholder: `Insert ${field.FieldName}`,
-    rules: validationRules(field)
-      //'required|email|string|between:5,25'
+    rules: validationRules(field),
+    options: {
+      validateOnChange: true
+    }
   }
+}
+
+function lengthInformation(field) {
+  if (!field) {
+    return '';
+  }
+
+  if (field.MinimumLength && !field.MaximumLength) {
+    return ` minimum ${field.MinimumLength} symbols`;
+  }
+  else if (!field.MinimumLength && field.MaximumLength) {
+    return ` maximum ${field.MaximumLength} symbols`;
+  }
+  else if (field.MinimumLength && field.MaximumLength && (field.MinimumLength != field.MaximumLength)) {
+    return ` (${field.MinimumLength}-${field.MaximumLength} symbols)`;
+  }
+  else if (field.MinimumLength == field.MaximumLength) {
+    return ` (${field.MinimumLength} symbols)`;
+  }
+
+  return '';
 }
 
 export function validationRules(field) {
@@ -42,25 +65,32 @@ export function validationRules(field) {
       max:       field.MaximumLength
   }
 
-  let retVal = '';
+  let retVal = [];
   for (var key in presenceRules){
-    retVal += `${presenceRules[key]?`${key}|`:''}`;
+    if (presenceRules[key]) {
+      retVal.push(`${key}`);
+    }
+    //retVal += `${presenceRules[key]?`${key}|`:''}`;
   }
 
   if (presenceRules.alpa_num === true){
     for (var key in minMaxRules){
-      retVal += `${minMaxRules[key]?`${key}:${minMaxRules[key]}|`:''}`;
+      if(minMaxRules[key]) {
+        retVal.push(`${key}:${minMaxRules[key]}|`);
+      }
+      //retVal += `${minMaxRules[key]?`${key}:${minMaxRules[key]}|`:''}`;
     }
   }
   else if (presenceRules.numeric === true && (minMaxRules.min || minMaxRules.max)){
       let min = minMaxRules.min || 0;
       let max = minMaxRules.max || Number.MAX_SAFE_INTEGER;
-      retVal += `regex:/^[0-9]{${min},${max}}$/`
+      retVal.push(`regex:/^[0-9]{${min},${max}}$/`);
+      //retVal += `regex:/^[0-9]{${min},${max}}$/`
   }
 
-  if (_.endsWith(retVal, '|') === true) {
-    retVal = retVal.substring(0, retVal.length-1)
-  }
+  // if (_.endsWith(retVal, '|') === true) {
+  //   retVal = retVal.substring(0, retVal.length-1)
+  // }
 
   //return ['required', 'regex:/^[0-9]{2,4}$/']
   return retVal;

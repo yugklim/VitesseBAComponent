@@ -4,7 +4,7 @@ describe('numeric validationRules tests', () => {
 
   it('returns required|numeric when Options: Mandatory, Type: Numeric', () => {
     let field = { Options: 'Mandatory', Type: 'Numeric'};
-    let expected = 'required|numeric';
+    let expected = ['required', 'numeric'];
     let output = validationRules(field);
     expect(output).toEqual(expected);
   });
