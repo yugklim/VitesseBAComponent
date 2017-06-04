@@ -1,4 +1,5 @@
 import _ from 'lodash'
+//const _ = require("lodash");
 
 export function getValidators(fields, form) {
   let validators = [];
@@ -73,10 +74,10 @@ export function validationRules(field) {
     //retVal += `${presenceRules[key]?`${key}|`:''}`;
   }
 
-  if (presenceRules.alpa_num === true){
+  if (presenceRules.alpha_num === true){
     for (var key in minMaxRules){
       if(minMaxRules[key]) {
-        retVal.push(`${key}:${minMaxRules[key]}|`);
+        retVal.push(`${key}:${minMaxRules[key]}`);
       }
       //retVal += `${minMaxRules[key]?`${key}:${minMaxRules[key]}|`:''}`;
     }
