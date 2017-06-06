@@ -1,4 +1,4 @@
-import {validationRules} from '../../../src/utilities/validation'
+var validationRules = require('../../../src/utilities/validation').validationRules
 
 describe('validationRules tests', () => {
 

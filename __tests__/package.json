@@ -54,7 +54,6 @@
     "webpack-hot-middleware": "^2.14.0"
   },
   "dependencies": {
-    "karma": "^1.7.0",
     "lodash": "^4.17.4"
   },
   "babel": {

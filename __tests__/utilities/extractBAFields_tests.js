@@ -1,4 +1,4 @@
-import extractBAChunks from '../../src/utilities/extractBAChunks'
+var extractBAChunks = require('../../src/utilities/extractBAChunks').extractBAChunks
 
 describe('ExtractBAChunks utility', () => {
 

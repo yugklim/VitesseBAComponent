@@ -1,12 +1,13 @@
 import React, { PropTypes, Component } from 'react'
 import ReactDOM from 'react-dom'
 import VitesseBAFields from './VitesseBAFields'
-import extractBAFields from './utilities/extractBAChunks'
 //import './VitesseBA.less';
 import MobxReactForm from 'mobx-react-form';
 import { observer } from 'mobx-react';
 import validatorjs from 'validatorjs';
-import { getValidators, getFormFields, getFormFields2 } from './utilities/validation'
+var getValidators = require('./utilities/validation').getValidators
+var getFormFields = require('./utilities/validation').getFormFields
+var extractBAFields = require('./utilities/extractBAChunks').extractBAChunks
 
 class LoginForm extends MobxReactForm {
 
@@ -23,9 +24,6 @@ class LoginForm extends MobxReactForm {
     form.invalidate('This is a generic error message!');
   }
 };
-
-
-
 
 export default class VitesseBA extends Component {
 

@@ -1,5 +1,7 @@
-import _ from 'lodash'
+var _ = require('lodash')
 
-export default function extractBAChunks(data) {
+function extractBAChunks(data) {
   return _.filter(data, (chunk) => chunk.Path && chunk.Path.includes('request.Recipient.Account'));
 }
+
+exports.extractBAChunks = extractBAChunks;

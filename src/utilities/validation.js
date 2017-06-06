@@ -1,7 +1,6 @@
-import _ from 'lodash'
-//const _ = require("lodash");
+var _ = require('lodash')
 
-export function getValidators(fields, form) {
+function getValidators(fields, form) {
   let validators = [];
   for (let index = 0; index < fields.length; ++index) {
     let field = fields[index];
@@ -14,7 +13,7 @@ export function getValidators(fields, form) {
   return validators;
 }
 
-export function getFormFields(fields) {
+function getFormFields(fields) {
   let retVal = {};
   _.forEach(fields, (field) => {
     retVal[field.Field] = getFormField(field)
@@ -54,7 +53,7 @@ function lengthInformation(field) {
   return '';
 }
 
-export function validationRules(field) {
+function validationRules(field) {
   let presenceRules = {
       required:  field.Options === 'Mandatory',
       alpha_num: field.FieldType === 'AlphaNumeric' || field.FieldType === 'ExtendedAlphaNumeric',
@@ -71,7 +70,6 @@ export function validationRules(field) {
     if (presenceRules[key]) {
       retVal.push(`${key}`);
     }
-    //retVal += `${presenceRules[key]?`${key}|`:''}`;
   }
 
   if (presenceRules.alpha_num === true){
@@ -79,21 +77,18 @@ export function validationRules(field) {
       if(minMaxRules[key]) {
         retVal.push(`${key}:${minMaxRules[key]}`);
       }
-      //retVal += `${minMaxRules[key]?`${key}:${minMaxRules[key]}|`:''}`;
     }
   }
   else if (presenceRules.numeric === true && (minMaxRules.min || minMaxRules.max)){
       let min = minMaxRules.min || 0;
       let max = minMaxRules.max || Number.MAX_SAFE_INTEGER;
       retVal.push(`regex:/^[0-9]{${min},${max}}$/`);
-      //retVal += `regex:/^[0-9]{${min},${max}}$/`
   }
 
-  // if (_.endsWith(retVal, '|') === true) {
-  //   retVal = retVal.substring(0, retVal.length-1)
-  // }
-
-  //return ['required', 'regex:/^[0-9]{2,4}$/']
   return retVal;
 }
+
+exports.getFormFields = getFormFields;
+exports.getValidators = getValidators;
+exports.validationRules = validationRules;
 
