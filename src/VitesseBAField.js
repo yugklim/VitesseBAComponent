@@ -40,4 +40,4 @@ const VitesseBAField = ({ pars, validator, idx, form }) =>
       )};
 };
 
-export default VitesseBAField
+exports.VitesseBAField = VitesseBAField;
