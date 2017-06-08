@@ -1,10 +1,10 @@
 import React, { PropTypes, Component } from 'react'
 import ReactDOM from 'react-dom'
-import VitesseBAField from './VitesseBAField'
 import MobxReactForm from 'mobx-react-form';
 import { observer } from 'mobx-react';
 import validatorjs from 'validatorjs';
 import { getValidators, getFormFields, getFormFields2 } from './utilities/validation'
+var VitesseBAField = require('./VitesseBAField').VitesseBAField
 
 
 
