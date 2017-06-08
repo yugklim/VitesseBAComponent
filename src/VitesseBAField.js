@@ -28,7 +28,8 @@ const VitesseBAField = ({ pars, validator, idx, form }) =>
       }
     else {
       let field = pars.Field;
-      return (
+      return validator?
+        (
         <div>
           <label htmlFor={validator.id} >
             {validator.label}
@@ -37,7 +38,14 @@ const VitesseBAField = ({ pars, validator, idx, form }) =>
           <p >{validator.error}</p>
 
         </div>
-      )};
+      ):
+      (<div>
+        <label htmlFor={field} >
+          {pars.FieldName}
+        </label>
+        <input id={field} />
+      </div>)
+    };
 };
 
 exports.VitesseBAField = VitesseBAField;
