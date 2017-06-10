@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="910b1bc5-a927-4f12-8a47-46e3f785f5b0" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/__tests__/components/VitesseBAField_tests.js" afterPath="$PROJECT_DIR$/__tests__/components/VitesseBAField_tests.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/VitesseBAField.js" afterPath="$PROJECT_DIR$/src/VitesseBAField.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/__tests__/components/VitesseBAField_Validator.js" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/__tests__/components/VitesseBAField_tests.js" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="VitesseBAComponent.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -29,15 +30,9 @@
       <file leaf-file-name="validation.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/utilities/validation.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
+            <state relative-caret-position="1980">
               <caret line="90" column="0" lean-forward="false" selection-start-line="90" selection-start-column="0" selection-end-line="90" selection-end-column="38" />
-              <folding>
-                <element signature="n#!!block;n#getValidators#0" expanded="false" />
-                <element signature="n#!!block;n#getFormFields#0" expanded="false" />
-                <element signature="n#!!block;n#getFormField#0" expanded="false" />
-                <element signature="n#!!block;n#lengthInformation#0" expanded="false" />
-                <element signature="n#!!block;n#validationRules#0" expanded="false" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -45,30 +40,18 @@
       <file leaf-file-name="VitesseBA.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/VitesseBA.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="154">
+            <state relative-caret-position="88">
               <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="67" />
               <folding>
                 <element signature="e#0#51#0" expanded="true" />
                 <element signature="e#162#206#0" expanded="true" />
-                <marker date="1496952671183" expanded="false" signature="537:902" ph="{...}" />
-                <marker date="1496952671183" expanded="true" signature="558:687" ph="{...}" />
-                <marker date="1496952671183" expanded="true" signature="705:900" ph="{...}" />
-                <marker date="1496952671183" expanded="true" signature="954:1905" ph="{...}" />
-                <marker date="1496952671183" expanded="true" signature="973:1708" ph="{...}" />
-                <marker date="1496952671183" expanded="true" signature="1005:1037" ph="{&quot;method&quot;: 'get'...}" />
-                <marker date="1496952671183" expanded="true" signature="1058:1647" ph="{...}" />
-                <marker date="1496952671183" expanded="true" signature="1083:1572" ph="{...}" />
-                <marker date="1496952671183" expanded="true" signature="1124:1562" ph="{...}" />
-                <marker date="1496952671183" expanded="true" signature="1578:1641" ph="{...}" />
-                <marker date="1496952671183" expanded="true" signature="1669:1702" ph="{...}" />
-                <marker date="1496952671183" expanded="true" signature="1721:1903" ph="{...}" />
-                <marker date="1496952671183" expanded="true" signature="1742:1897" ph="&lt;div/&gt;" />
+                <element signature="n#LoginForm#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="package.json" pinned="false" current-in-tab="false">
+      <file leaf-file-name="package.json" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/__tests__/package.json">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="176">
@@ -88,21 +71,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="min_max.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/__tests__/utilities/validation/min_max.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="82" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="82" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="VitesseBAField.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/VitesseBAField.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="189">
-              <caret line="39" column="14" lean-forward="true" selection-start-line="39" selection-start-column="14" selection-end-line="39" selection-end-column="14" />
+            <state relative-caret-position="297">
+              <caret line="38" column="0" lean-forward="true" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -141,11 +114,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="VitesseBAField_tests.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/__tests__/components/VitesseBAField_tests.js">
+      <file leaf-file-name="VitesseBAField_Validator.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/__tests__/components/VitesseBAField_Validator.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="224">
-              <caret line="29" column="1" lean-forward="false" selection-start-line="29" selection-start-column="1" selection-end-line="29" selection-end-column="1" />
+            <state relative-caret-position="396">
+              <caret line="30" column="21" lean-forward="false" selection-start-line="30" selection-start-column="21" selection-end-line="30" selection-end-column="21" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="VitesseBAField_WithoutValidator.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/__tests__/components/VitesseBAField_WithoutValidator.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="616">
+              <caret line="43" column="36" lean-forward="false" selection-start-line="43" selection-start-column="36" selection-end-line="43" selection-end-column="36" />
               <folding />
             </state>
           </provider>
@@ -157,8 +140,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
-        <option value="JavaScript File" />
         <option value="package_json" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -215,6 +198,8 @@
         <option value="$PROJECT_DIR$/src/VitesseBAFields.js" />
         <option value="$PROJECT_DIR$/src/VitesseBAField.js" />
         <option value="$PROJECT_DIR$/__tests__/components/VitesseBAField_tests.js" />
+        <option value="$PROJECT_DIR$/__tests__/components/VitesseBAField_WithoutValidator.js" />
+        <option value="$PROJECT_DIR$/__tests__/components/VitesseBAField_Validator.js" />
       </list>
     </option>
   </component>
@@ -266,7 +251,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -377,7 +362,7 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -418,60 +403,62 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Jest.VitesseBAField component">
-    <configuration default="false" name="validationRules tests" type="JavaScriptTestRunnerJest" factoryName="Jest" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Jest.VitesseBAField component, validator is present">
+    <configuration default="false" name="VitesseBAField component, validator is present" type="JavaScriptTestRunnerJest" factoryName="Jest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
-      <working-dir value="$PROJECT_DIR$" />
+      <working-dir value="$PROJECT_DIR$/__tests__" />
       <envs />
       <scope-kind value="SUITE" />
-      <test-file value="$PROJECT_DIR$/__tests__/utilities/validation/alpha_numeric.js" />
+      <test-file value="$PROJECT_DIR$/__tests__/components/VitesseBAField_Validator.js" />
       <test-names>
-        <test-name value="validationRules tests" />
+        <test-name value="VitesseBAField component, validator is present" />
       </test-names>
       <method />
     </configuration>
-    <configuration default="false" name="numeric validationRules tests" type="JavaScriptTestRunnerJest" factoryName="Jest" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="VitesseBAField component, without validator.should render label, input, error message" type="JavaScriptTestRunnerJest" factoryName="Jest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
-      <working-dir value="$PROJECT_DIR$" />
-      <envs />
-      <scope-kind value="SUITE" />
-      <test-file value="$PROJECT_DIR$/__tests__/utilities/validation/numeric.js" />
-      <test-names>
-        <test-name value="numeric validationRules tests" />
-      </test-names>
-      <method />
-    </configuration>
-    <configuration default="false" name="ExtractBAChunks utility" type="JavaScriptTestRunnerJest" factoryName="Jest" temporary="true" nameIsGenerated="true">
-      <node-interpreter value="project" />
-      <working-dir value="$PROJECT_DIR$" />
-      <envs />
-      <scope-kind value="SUITE" />
-      <test-file value="$PROJECT_DIR$/__tests__/utilities/extractBAFields_tests.js" />
-      <test-names>
-        <test-name value="ExtractBAChunks utility" />
-      </test-names>
-      <method />
-    </configuration>
-    <configuration default="false" name="VitesseBAField component.should render self and subcomponents" type="JavaScriptTestRunnerJest" factoryName="Jest" temporary="true" nameIsGenerated="true">
-      <node-interpreter value="project" />
-      <working-dir value="$PROJECT_DIR$" />
+      <working-dir value="$PROJECT_DIR$/__tests__" />
       <envs />
       <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/__tests__/components/VitesseBAField_tests.js" />
+      <test-file value="$PROJECT_DIR$/__tests__/components/VitesseBAField_WithoutValidator.js" />
       <test-names>
-        <test-name value="VitesseBAField component" />
-        <test-name value="should render self and subcomponents" />
+        <test-name value="VitesseBAField component, without validator" />
+        <test-name value="should render label, input, error message" />
       </test-names>
       <method />
     </configuration>
-    <configuration default="false" name="VitesseBAField component" type="JavaScriptTestRunnerJest" factoryName="Jest" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="VitesseBAField component, without validator.label should have htmlFor = Field" type="JavaScriptTestRunnerJest" factoryName="Jest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
-      <working-dir value="$PROJECT_DIR$/__tests__/" />
+      <working-dir value="$PROJECT_DIR$/__tests__" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/__tests__/components/VitesseBAField_WithoutValidator.js" />
+      <test-names>
+        <test-name value="VitesseBAField component, without validator" />
+        <test-name value="label should have htmlFor = Field" />
+      </test-names>
+      <method />
+    </configuration>
+    <configuration default="false" name="VitesseBAField component, without validator.input should have id = Field" type="JavaScriptTestRunnerJest" factoryName="Jest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <working-dir value="$PROJECT_DIR$/__tests__" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/__tests__/components/VitesseBAField_WithoutValidator.js" />
+      <test-names>
+        <test-name value="VitesseBAField component, without validator" />
+        <test-name value="input should have id = Field" />
+      </test-names>
+      <method />
+    </configuration>
+    <configuration default="false" name="VitesseBAField component, without validator" type="JavaScriptTestRunnerJest" factoryName="Jest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <working-dir value="$PROJECT_DIR$/__tests__" />
       <envs />
       <scope-kind value="SUITE" />
-      <test-file value="$PROJECT_DIR$/__tests__/components/VitesseBAField_tests.js" />
+      <test-file value="$PROJECT_DIR$/__tests__/components/VitesseBAField_WithoutValidator.js" />
       <test-names>
-        <test-name value="VitesseBAField component" />
+        <test-name value="VitesseBAField component, without validator" />
       </test-names>
       <method />
     </configuration>
@@ -596,19 +583,19 @@
       <item index="1" class="java.lang.String" itemvalue="Karma.Unnamed" />
       <item index="2" class="java.lang.String" itemvalue="npm.Unnamed" />
       <item index="3" class="java.lang.String" itemvalue="Node.js.validation-debug" />
-      <item index="4" class="java.lang.String" itemvalue="Jest.validationRules tests" />
-      <item index="5" class="java.lang.String" itemvalue="Jest.numeric validationRules tests" />
-      <item index="6" class="java.lang.String" itemvalue="Jest.ExtractBAChunks utility" />
-      <item index="7" class="java.lang.String" itemvalue="Jest.VitesseBAField component.should render self and subcomponents" />
-      <item index="8" class="java.lang.String" itemvalue="Jest.VitesseBAField component" />
+      <item index="4" class="java.lang.String" itemvalue="Jest.VitesseBAField component, validator is present" />
+      <item index="5" class="java.lang.String" itemvalue="Jest.VitesseBAField component, without validator.should render label, input, error message" />
+      <item index="6" class="java.lang.String" itemvalue="Jest.VitesseBAField component, without validator.label should have htmlFor = Field" />
+      <item index="7" class="java.lang.String" itemvalue="Jest.VitesseBAField component, without validator.input should have id = Field" />
+      <item index="8" class="java.lang.String" itemvalue="Jest.VitesseBAField component, without validator" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Jest.VitesseBAField component" />
-        <item index="1" class="java.lang.String" itemvalue="Jest.VitesseBAField component.should render self and subcomponents" />
-        <item index="2" class="java.lang.String" itemvalue="Jest.ExtractBAChunks utility" />
-        <item index="3" class="java.lang.String" itemvalue="Jest.numeric validationRules tests" />
-        <item index="4" class="java.lang.String" itemvalue="Jest.validationRules tests" />
+        <item index="0" class="java.lang.String" itemvalue="Jest.VitesseBAField component, validator is present" />
+        <item index="1" class="java.lang.String" itemvalue="Jest.VitesseBAField component, without validator" />
+        <item index="2" class="java.lang.String" itemvalue="Jest.VitesseBAField component, without validator.input should have id = Field" />
+        <item index="3" class="java.lang.String" itemvalue="Jest.VitesseBAField component, without validator.label should have htmlFor = Field" />
+        <item index="4" class="java.lang.String" itemvalue="Jest.VitesseBAField component, without validator.should render label, input, error message" />
       </list>
     </recent_temporary>
   </component>
@@ -648,44 +635,45 @@
       <workItem from="1496495932247" duration="8791000" />
       <workItem from="1496581964675" duration="715000" />
       <workItem from="1496586332595" duration="819000" />
-      <workItem from="1496587654771" duration="17459000" />
+      <workItem from="1496587654771" duration="18049000" />
+      <workItem from="1497089315876" duration="9183000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="VitesseBAField_component - 2017.06.08 at 23h 22m 18s.xml">
-      <configuration name="VitesseBAField component" configurationId="JavaScriptTestRunnerJest" />
+    <history-entry file="VitesseBAField_component,_validator_is_present - 2017.06.10 at 17h 54m 15s.xml">
+      <configuration name="VitesseBAField component, validator is present" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
-    <history-entry file="VitesseBAField_component - 2017.06.08 at 23h 23m 29s.xml">
-      <configuration name="VitesseBAField component" configurationId="JavaScriptTestRunnerJest" />
+    <history-entry file="VitesseBAField_component,_without_validator - 2017.06.10 at 17h 53m 00s.xml">
+      <configuration name="VitesseBAField component, without validator" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
-    <history-entry file="VitesseBAField_component - 2017.06.08 at 23h 41m 19s.xml">
-      <configuration name="VitesseBAField component" configurationId="JavaScriptTestRunnerJest" />
+    <history-entry file="VitesseBAField_component,_without_validator - 2017.06.10 at 17h 53m 15s.xml">
+      <configuration name="VitesseBAField component, without validator" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
-    <history-entry file="VitesseBAField_component - 2017.06.08 at 23h 45m 00s.xml">
-      <configuration name="VitesseBAField component" configurationId="JavaScriptTestRunnerJest" />
+    <history-entry file="VitesseBAField_component,_without_validator_input_should_have_id_=_Field - 2017.06.10 at 17h 52m 28s.xml">
+      <configuration name="VitesseBAField component, without validator.input should have id = Field" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
-    <history-entry file="VitesseBAField_component - 2017.06.08 at 23h 45m 24s.xml">
-      <configuration name="VitesseBAField component" configurationId="JavaScriptTestRunnerJest" />
+    <history-entry file="VitesseBAField_component,_without_validator_input_should_have_id_=_Field - 2017.06.10 at 17h 52m 51s.xml">
+      <configuration name="VitesseBAField component, without validator.input should have id = Field" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
-    <history-entry file="VitesseBAField_component - 2017.06.08 at 23h 45m 27s.xml">
-      <configuration name="VitesseBAField component" configurationId="JavaScriptTestRunnerJest" />
+    <history-entry file="VitesseBAField_component,_without_validator_label_should_have_htmlFor_=_Field - 2017.06.10 at 17h 46m 12s.xml">
+      <configuration name="VitesseBAField component, without validator.label should have htmlFor = Field" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
-    <history-entry file="VitesseBAField_component - 2017.06.08 at 23h 46m 09s.xml">
-      <configuration name="VitesseBAField component" configurationId="JavaScriptTestRunnerJest" />
+    <history-entry file="VitesseBAField_component,_without_validator_label_should_have_htmlFor_=_Field - 2017.06.10 at 17h 46m 30s.xml">
+      <configuration name="VitesseBAField component, without validator.label should have htmlFor = Field" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
-    <history-entry file="VitesseBAField_component_should_render_self_and_subcomponents - 2017.06.08 at 23h 18m 01s.xml">
-      <configuration name="VitesseBAField component.should render self and subcomponents" configurationId="JavaScriptTestRunnerJest" />
+    <history-entry file="VitesseBAField_component,_without_validator_should_render_label,_input,_error_message - 2017.06.10 at 17h 39m 39s.xml">
+      <configuration name="VitesseBAField component, without validator.should render label, input, error message" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
-    <history-entry file="VitesseBAField_component_should_render_self_and_subcomponents - 2017.06.08 at 23h 24m 38s.xml">
-      <configuration name="VitesseBAField component.should render self and subcomponents" configurationId="JavaScriptTestRunnerJest" />
+    <history-entry file="VitesseBAField_component,_without_validator_should_render_label,_input,_error_message - 2017.06.10 at 17h 41m 36s.xml">
+      <configuration name="VitesseBAField component, without validator.should render label, input, error message" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
-    <history-entry file="VitesseBAField_component_should_render_self_and_subcomponents - 2017.06.08 at 23h 24m 47s.xml">
-      <configuration name="VitesseBAField component.should render self and subcomponents" configurationId="JavaScriptTestRunnerJest" />
+    <history-entry file="VitesseBAField_component,_without_validator_should_render_label,_input,_error_message - 2017.06.10 at 17h 42m 21s.xml">
+      <configuration name="VitesseBAField component, without validator.should render label, input, error message" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="190272000" />
+    <option name="totallyTimeSpent" value="200045000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -698,21 +686,19 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1456" height="876" extended-state="6" />
-    <editor active="true" />
     <layout>
+      <window_info id="TypeScript" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32974428" sideWeight="0.48025388" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16995768" sideWeight="0.48466256" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32970026" sideWeight="0.49717113" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25302827" sideWeight="0.2919605" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3270525" sideWeight="0.4805058" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.46837148" sideWeight="0.70803946" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.17496635" sideWeight="0.70803946" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27150917" sideWeight="0.5153374" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1372813" sideWeight="0.5684062" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="TypeScript" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32974428" sideWeight="0.48025388" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22778562" sideWeight="0.48466256" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3781965" sideWeight="0.49435824" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30820996" sideWeight="0.5684062" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3755047" sideWeight="0.8187588" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.36339167" sideWeight="0.8187588" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -720,6 +706,7 @@
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3781965" sideWeight="0.49435824" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
@@ -784,30 +771,41 @@
           <option name="timeStamp" value="27" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/__tests__/components/VitesseBAField_tests.js</url>
-          <line>28</line>
+          <url>file://$PROJECT_DIR$/__tests__/components/VitesseBAField_Validator.js</url>
+          <line>37</line>
           <properties />
-          <option name="timeStamp" value="47" />
+          <option name="timeStamp" value="50" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/__tests__/components/VitesseBAField_Validator.js</url>
+          <line>36</line>
+          <properties />
+          <option name="timeStamp" value="51" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/__tests__/components/VitesseBAField_WithoutValidator.js</url>
+          <line>27</line>
+          <properties />
+          <option name="timeStamp" value="52" />
         </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="48" />
+      <option name="time" value="53" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="JavaScriptTestRunnerJest">
         <watch expression="vitesseBAField.html()" language="JavaScript" />
-        <watch expression="fieldNameDiv.text()" language="JavaScript" />
-        <watch expression="fieldNameDiv.text()" language="JavaScript" />
-        <watch expression="vitesseBAField.html()" language="JavaScript" />
-        <watch expression="vitesseBAField.find('label').html()" language="JavaScript" />
-        <watch expression="vitesseBAField.find('label').text()" language="JavaScript" />
+        <watch expression="label.html()" language="JavaScript" />
+        <watch expression="label " language="JavaScript" />
+        <watch expression="input.html()" language="JavaScript" />
+        <watch expression="error.html()" language="JavaScript" />
+        <watch expression="error " language="JavaScript" />
       </configuration>
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/tests/webpack.config.js" />
     <entry file="file://$PROJECT_DIR$/tests/package.json" />
     <entry file="file://$PROJECT_DIR$/examples/node_modules/underscore/package.json" />
     <entry file="file://$PROJECT_DIR$/__tests__/node_modules/react/LICENSE">
@@ -998,7 +996,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
           <caret line="15" column="23" lean-forward="false" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="23" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1006,7 +1003,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1014,7 +1010,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="22">
           <caret line="1" column="60" lean-forward="true" selection-start-line="1" selection-start-column="27" selection-end-line="1" selection-end-column="60" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1022,7 +1017,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1030,7 +1024,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1038,7 +1031,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1046,28 +1038,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1496954761313" expanded="true" signature="68838:68855" ph="..." />
-            <marker date="1496954761313" expanded="true" signature="68838:68873" ph="..." />
-            <marker date="1496954761313" expanded="true" signature="68838:68886" ph="..." />
-            <marker date="1496954761313" expanded="true" signature="68838:68901" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/__tests__/min_max.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="76" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="76" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/__tests__/min_max.js" />
     <entry file="file://$PROJECT_DIR$/__tests__/utilities/validation/alpha_numeric.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="82" lean-forward="false" selection-start-line="0" selection-start-column="82" selection-end-line="0" selection-end-column="82" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1075,7 +1053,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="82" lean-forward="false" selection-start-line="0" selection-start-column="82" selection-end-line="0" selection-end-column="82" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1103,25 +1080,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/__tests__/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="8" column="4" lean-forward="true" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/utilities/validation.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
+        <state relative-caret-position="1980">
           <caret line="90" column="0" lean-forward="false" selection-start-line="90" selection-start-column="0" selection-end-line="90" selection-end-column="38" />
-          <folding>
-            <element signature="n#!!block;n#getValidators#0" expanded="false" />
-            <element signature="n#!!block;n#getFormFields#0" expanded="false" />
-            <element signature="n#!!block;n#getFormField#0" expanded="false" />
-            <element signature="n#!!block;n#lengthInformation#0" expanded="false" />
-            <element signature="n#!!block;n#validationRules#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1135,24 +1098,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/VitesseBA.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
+        <state relative-caret-position="88">
           <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="67" />
           <folding>
             <element signature="e#0#51#0" expanded="true" />
             <element signature="e#162#206#0" expanded="true" />
-            <marker date="1496952671183" expanded="false" signature="537:902" ph="{...}" />
-            <marker date="1496952671183" expanded="true" signature="558:687" ph="{...}" />
-            <marker date="1496952671183" expanded="true" signature="705:900" ph="{...}" />
-            <marker date="1496952671183" expanded="true" signature="954:1905" ph="{...}" />
-            <marker date="1496952671183" expanded="true" signature="973:1708" ph="{...}" />
-            <marker date="1496952671183" expanded="true" signature="1005:1037" ph="{&quot;method&quot;: 'get'...}" />
-            <marker date="1496952671183" expanded="true" signature="1058:1647" ph="{...}" />
-            <marker date="1496952671183" expanded="true" signature="1083:1572" ph="{...}" />
-            <marker date="1496952671183" expanded="true" signature="1124:1562" ph="{...}" />
-            <marker date="1496952671183" expanded="true" signature="1578:1641" ph="{...}" />
-            <marker date="1496952671183" expanded="true" signature="1669:1702" ph="{...}" />
-            <marker date="1496952671183" expanded="true" signature="1721:1903" ph="{...}" />
-            <marker date="1496952671183" expanded="true" signature="1742:1897" ph="&lt;div/&gt;" />
+            <element signature="n#LoginForm#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1170,16 +1121,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/VitesseBAField.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="39" column="14" lean-forward="true" selection-start-line="39" selection-start-column="14" selection-end-line="39" selection-end-column="14" />
+        <state relative-caret-position="297">
+          <caret line="38" column="0" lean-forward="true" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/__tests__/components/VitesseBAField_tests.js">
+    <entry file="file://$PROJECT_DIR$/__tests__/components/VitesseBAField_WithoutValidator.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="29" column="1" lean-forward="false" selection-start-line="29" selection-start-column="1" selection-end-line="29" selection-end-column="1" />
+        <state relative-caret-position="616">
+          <caret line="43" column="36" lean-forward="false" selection-start-line="43" selection-start-column="36" selection-end-line="43" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/__tests__/components/VitesseBAField_Validator.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="30" column="21" lean-forward="false" selection-start-line="30" selection-start-column="21" selection-end-line="30" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/__tests__/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="8" column="4" lean-forward="true" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
           <folding />
         </state>
       </provider>
