@@ -1,5 +1,5 @@
 import React, { PropTypes, Component } from 'react'
-
+import InputMask from 'react-input-mask';
 
 // export default class VitesseBAField extends Component {
 //
@@ -34,7 +34,8 @@ const VitesseBAField = ({ pars, validator, idx, form }) =>
           <label htmlFor={validator.id} >
             {validator.label}
           </label>
-          <input {...validator.bind} />
+          {/*<MaskedInput {...validator.bind} mask='111111111' placeholderChar=' ' />*/}
+          <InputMask {...validator.bind} mask="999999999" maskChar={null} />
           <p >{validator.error}</p>
 
         </div>
