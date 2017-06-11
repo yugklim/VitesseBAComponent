@@ -21,13 +21,12 @@ function setup() {
 
 describe('VitesseBAField component, validator is present', () => {
 
-  it('should render label, input, error message', () => {
+  it('should render label, error message', () => {
     const {props, vitesseBAField} = setup();
     let label = vitesseBAField.find('label');//.findWhere(d => d.text() == props.pars.FieldName);
     let input = vitesseBAField.find('input');
     let error = vitesseBAField.find('p');
     expect(label.node).toBeTruthy();
-    expect(input.node).toBeTruthy();
     expect(error.node).toBeTruthy();
   });
 

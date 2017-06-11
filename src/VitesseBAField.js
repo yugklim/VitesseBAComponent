@@ -28,6 +28,29 @@ const VitesseBAField = ({ pars, validator, idx, form }) =>
       }
     else {
       let field = pars.Field;
+      let fieldType = pars.FieldType;
+      switch (fieldType)
+      {
+        case 'Numeric':
+          var maskChar = '9';
+          break;
+        case 'AlphaNumeric':
+          maskChar = 'a';
+          break;
+        case 'ExtendedAlphaNumeric':
+          maskChar = 'a';
+          break;
+        default:
+          maskChar = '*';
+      }
+
+      let minLength = parseInt(pars.MinimumLength);
+      let maxLength = parseInt(pars.MaximumLength);
+
+      if (maxLength > 0){
+        var mask = _.repeat(maskChar, maxLength);
+      }
+
       return validator?
         (
         <div>
@@ -35,7 +58,7 @@ const VitesseBAField = ({ pars, validator, idx, form }) =>
             {validator.label}
           </label>
           {/*<MaskedInput {...validator.bind} mask='111111111' placeholderChar=' ' />*/}
-          <InputMask {...validator.bind} mask="999999999" maskChar={null} />
+          <InputMask {...validator.bind} mask={mask} maskChar={null} />
           <p >{validator.error}</p>
 
         </div>
