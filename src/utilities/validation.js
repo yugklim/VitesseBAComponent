@@ -73,7 +73,7 @@ function validationRules(field) {
   }
 
   if (presenceRules.alpha_num === true){
-    for (var key in minMaxRules){
+    for (key in minMaxRules){
       if(minMaxRules[key]) {
         retVal.push(`${key}:${minMaxRules[key]}`);
       }

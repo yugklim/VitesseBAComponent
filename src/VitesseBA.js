@@ -1,11 +1,8 @@
-import React, { PropTypes, Component } from 'react'
+import React, {Component} from 'react'
 import ReactDOM from 'react-dom'
 import VitesseBAFields from './VitesseBAFields'
-//import './VitesseBA.less';
 import MobxReactForm from 'mobx-react-form';
-import { observer } from 'mobx-react';
 import validatorjs from 'validatorjs';
-var getValidators = require('./utilities/validation').getValidators
 var getFormFields = require('./utilities/validation').getFormFields
 var extractBAFields = require('./utilities/extractBAChunks').extractBAChunks
 
@@ -23,36 +20,36 @@ class LoginForm extends MobxReactForm {
     // invalidate the form with a custom error message
     form.invalidate('This is a generic error message!');
   }
-};
+}
 
 export default class VitesseBA extends Component {
 
-  getFields (e) {
-    fetch(`/getFields`,
+  getFields () {
+    fetch('/getFields',
       {
-        method: 'get',
+        method: 'get'
       }).then((response) => {
-      if (response.ok) {
-        response.json().then((data) => {
+        if (response.ok) {
+          response.json().then((data) => {
 
-          let baFields = extractBAFields(data);
+            let baFields = extractBAFields(data);
 
-          const plugins = { dvr: validatorjs };
-          const form = new LoginForm({ fields: getFormFields(baFields) }, { plugins });
+            const plugins = { dvr: validatorjs };
+            const form = new LoginForm({ fields: getFormFields(baFields) }, { plugins });
 
-          ReactDOM.render(
-            // React.createElement('VitesseBAFields',null,null),
-            <VitesseBAFields fields={baFields} form={form}></VitesseBAFields>,
-            document.getElementById('vitesseBAFields')
-          );
+            ReactDOM.render(
+              // React.createElement('VitesseBAFields',null,null),
+              <VitesseBAFields fields={baFields} form={form}></VitesseBAFields>,
+              document.getElementById('vitesseBAFields')
+            );
 
-        });
-      } else {
-        console.error('Network error - ' + response);
-      }
-    }).catch(function(err) {
-      console.error(err);
-    });
+          });
+        } else {
+          console.error('Network error - ' + response);
+        }
+      }).catch(function(err) {
+        console.error(err);
+      });
   }
 
   render() {

@@ -1,5 +1,6 @@
-import React, { PropTypes, Component } from 'react'
+import React from 'react'
 import InputMask from 'react-input-mask';
+var _ = require('lodash')
 
 // export default class VitesseBAField extends Component {
 //
@@ -20,7 +21,7 @@ import InputMask from 'react-input-mask';
 
 
 
-const VitesseBAField = ({ pars, validator, idx, form }) =>
+const VitesseBAField = ({ pars, validator }) =>
 {
     if (!pars.Field)
       {
@@ -44,7 +45,6 @@ const VitesseBAField = ({ pars, validator, idx, form }) =>
           maskChar = '*';
       }
 
-      let minLength = parseInt(pars.MinimumLength);
       let maxLength = parseInt(pars.MaximumLength);
 
       if (maxLength > 0){
@@ -69,7 +69,7 @@ const VitesseBAField = ({ pars, validator, idx, form }) =>
         </label>
         <input id={field} />
       </div>)
-    };
+    }
 };
 
 exports.VitesseBAField = VitesseBAField;

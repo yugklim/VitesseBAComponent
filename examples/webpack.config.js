@@ -27,6 +27,16 @@ module.exports = {
   ],
 
   module: {
+    preLoaders: [
+      {
+        test: /\.js$/,
+        loaders: ['eslint-loader'],
+        include: [
+          path.resolve(path.normalize(__dirname + '\\..'), "src")
+        ],
+        exclude: /node_modules/
+      }
+    ],
     loaders: [
       {
         loaders: ['react-hot', 'babel-loader'],
