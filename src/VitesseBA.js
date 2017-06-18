@@ -54,9 +54,9 @@ export default class VitesseBA extends Component {
 
   render() {
     return (
-      <div className="MyComponent">
-        <input type='button' value="Rules" onClick={::this.getFields}/>
-        <div id="vitesseBAFields"></div>
+      <div className='MyComponent'>
+        <input type='button' value='Rules' onClick={::this.getFields}/>
+        <div id='vitesseBAFields'></div>
       </div>);
   }
 }

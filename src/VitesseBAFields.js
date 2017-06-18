@@ -26,9 +26,9 @@ const VitesseBAFields = observer(
             })
           }
 
-          <button type="submit" onClick={form.onSubmit}>Submit</button>
-          <button type="button" onClick={form.onReset}>Reset</button>
-          <button type="button" onClick={form.onClear}>Clear</button>
+          <button type='submit' onClick={form.onSubmit}>Submit</button>
+          <button type='button' onClick={form.onReset}>Reset</button>
+          <button type='button' onClick={form.onClear}>Clear</button>
 
           <p>{form.error}</p>
         </form>);
