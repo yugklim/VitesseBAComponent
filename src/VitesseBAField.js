@@ -1,6 +1,7 @@
 import React from 'react'
 import InputMask from 'react-input-mask';
 var _ = require('lodash')
+import PropTypes from 'prop-types';
 
 // export default class VitesseBAField extends Component {
 //
@@ -70,6 +71,14 @@ const VitesseBAField = ({ pars, validator }) =>
         <input id={field} />
       </div>)
     }
+};
+
+VitesseBAField.propTypes = {
+  pars: PropTypes.shape({
+    Field: PropTypes.string.isRequired ,
+    FieldType: PropTypes.string.isRequired ,
+    FieldName: PropTypes.string.isRequired
+  })
 };
 
 exports.VitesseBAField = VitesseBAField;
