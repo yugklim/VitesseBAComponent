@@ -39,7 +39,8 @@ VitesseBAFields.propTypes = {
     Field: PropTypes.string.isRequired ,
     FieldType: PropTypes.string.isRequired ,
     FieldName: PropTypes.string.isRequired
-  })
+  }),
+  form: PropTypes.object
 };
 
 export default VitesseBAFields
