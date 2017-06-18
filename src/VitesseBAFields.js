@@ -2,8 +2,7 @@ import React from 'react'
 import { observer } from 'mobx-react';
 import { getValidators } from './utilities/validation'
 var VitesseBAField = require('./VitesseBAField').VitesseBAField
-
-
+import PropTypes from 'prop-types';
 
 const VitesseBAFields = observer(
   ({ fields, form }) =>
@@ -34,5 +33,13 @@ const VitesseBAFields = observer(
         </form>);
     }
   });
+
+VitesseBAFields.propTypes = {
+  pars: PropTypes.shape({
+    Field: PropTypes.string.isRequired ,
+    FieldType: PropTypes.string.isRequired ,
+    FieldName: PropTypes.string.isRequired
+  })
+};
 
 export default VitesseBAFields

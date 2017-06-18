@@ -78,7 +78,8 @@ VitesseBAField.propTypes = {
     Field: PropTypes.string.isRequired ,
     FieldType: PropTypes.string.isRequired ,
     FieldName: PropTypes.string.isRequired
-  })
+  }),
+  validator: PropTypes.object
 };
 
 exports.VitesseBAField = VitesseBAField;
