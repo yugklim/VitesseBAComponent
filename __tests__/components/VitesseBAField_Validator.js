@@ -6,7 +6,8 @@ function setup() {
   const props = {
     pars: {
       Field: 'Field1',
-      FieldName: 'FieldName1'
+      FieldName: 'FieldName1',
+      FieldType: 'AlphaNumeric'
     },
     validator: { id: 'id', label: 'label', bind: [1,2], error: 'error'}
   }
