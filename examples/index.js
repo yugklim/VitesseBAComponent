@@ -23,9 +23,42 @@ import  VitesseBA  from '../src/VitesseBA.js'
 //   }
 // }, document.getElementById('vitesseBA'));
 
+
+  const selectorComponent = () => {
+    let renderVitesseBA = function() {
+      const element = <VitesseBA></VitesseBA>;
+      render(element,  document.getElementById('vitesseBA'));
+    };
+
+    return <div>
+    Country:
+    <select id="country" onChange={renderVitesseBA}>
+      <option>GB</option>
+      <option>AU</option>
+      <option>FR</option>
+    </select>
+    Currency:
+    <select id="currency" onChange={renderVitesseBA}>
+      <option>GBP</option>
+      <option>USD</option>
+      <option>EUR</option>
+    </select>
+  </div>};
+  const selector = <selectorComponent></selectorComponent>
+    // doesnt work
+    //render(selector,  document.getElementById('selector'));
 render({
     $$typeof: Symbol.for('react.element'),
-    type: VitesseBA
-  },  document.getElementById('vitesseBA'));
+    type: selectorComponent
+  },  document.getElementById('selector'));
+
+
+
+
+// /renderVitesseBA();
+// render({
+//     $$typeof: Symbol.for('react.element'),
+//     type: VitesseBA
+//   },  document.getElementById('vitesseBA'));
 //render({type: VitesseBA},  document.getElementById('vitesseBA'));
 //render(<VitesseBA></VitesseBA>,  document.getElementById('vitesseBA'));
