@@ -25,7 +25,9 @@ class LoginForm extends MobxReactForm {
 export default class VitesseBA extends Component {
 
   getFields () {
-    fetch('/getFields',
+    let country = this.props.country;
+    let currency = this.props.currency;
+    fetch(`/getFields/${country}/${currency}`,
       {
         method: 'get'
       }).then((response) => {

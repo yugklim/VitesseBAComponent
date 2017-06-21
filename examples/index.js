@@ -25,20 +25,23 @@ import  VitesseBA  from '../src/VitesseBA.js'
 
 
   const selectorComponent = () => {
+    let countrySelect, currencySelect;
     let renderVitesseBA = function() {
-      const element = <VitesseBA></VitesseBA>;
+      let country = countrySelect.value;
+      let currency = currencySelect.value;
+      const element = <VitesseBA country={country} currency={currency}></VitesseBA>;
       render(element,  document.getElementById('vitesseBA'));
     };
 
     return <div>
     Country:
-    <select id="country" onChange={renderVitesseBA}>
+    <select id="country" onChange={renderVitesseBA} ref={(select) => { countrySelect = select; }}>
       <option>GB</option>
       <option>AU</option>
       <option>FR</option>
     </select>
     Currency:
-    <select id="currency" onChange={renderVitesseBA}>
+    <select id="currency" onChange={renderVitesseBA} ref={(select) => { currencySelect = select; }}>
       <option>GBP</option>
       <option>USD</option>
       <option>EUR</option>
