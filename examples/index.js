@@ -61,7 +61,7 @@ render({
     type: selectorComponent
   },  document.getElementById('selector'));
 
-
+render(<VitesseBA countryCurrency={'GB/GBP'}></VitesseBA>,  document.getElementById('vitesseBA'));
 
 
 // /renderVitesseBA();

@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="910b1bc5-a927-4f12-8a47-46e3f785f5b0" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/examples/index.js" afterPath="$PROJECT_DIR$/examples/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/examples/server.js" afterPath="$PROJECT_DIR$/examples/server.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/VitesseBA.js" afterPath="$PROJECT_DIR$/src/VitesseBA.js" />
     </list>
     <ignored path="VitesseBAComponent.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -21,39 +19,17 @@
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
   </component>
-  <component name="DockManager">
-    <window id="1">
-      <content type="file-editors">
-        <state>
-          <leaf>
-            <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
-              <entry file="file://$PROJECT_DIR$/examples/index.js">
-                <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="188">
-                    <caret line="30" column="48" selection-start-line="30" selection-start-column="48" selection-end-line="30" selection-end-column="48" />
-                    <folding>
-                      <element signature="e#0#25#0" expanded="true" />
-                    </folding>
-                  </state>
-                </provider>
-              </entry>
-            </file>
-          </leaf>
-        </state>
-      </content>
-    </window>
-  </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FavoritesManager">
     <favorites_list name="VitesseBAComponent" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="VitesseBA.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="VitesseBA.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/VitesseBA.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
-              <caret line="28" column="39" selection-start-line="28" selection-start-column="39" selection-end-line="28" selection-end-column="39" />
+            <state relative-caret-position="264">
+              <caret line="33" column="42" selection-start-line="33" selection-start-column="42" selection-end-line="33" selection-end-column="42" />
               <folding>
                 <element signature="n#LoginForm#0" expanded="false" />
                 <marker date="1498150579474" expanded="true" signature="1749:1803" ph="..." />
@@ -62,10 +38,22 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="server.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/examples/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="320">
+              <caret line="63" column="42" selection-start-line="63" selection-start-column="42" selection-end-line="63" selection-end-column="42" />
+              <folding>
+                <element signature="e#0#25#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="server.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/examples/server.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="499">
+            <state relative-caret-position="506">
               <caret line="1134" column="0" selection-start-line="1134" selection-start-column="0" selection-end-line="1134" selection-end-column="0" />
               <folding>
                 <element signature="e#747#3135#0" expanded="false" />
@@ -224,8 +212,8 @@
         <option value="$PROJECT_DIR$/__tests__/components/VitesseBAField_Validator.js" />
         <option value="$PROJECT_DIR$/examples/index.html" />
         <option value="$PROJECT_DIR$/src/VitesseBA.js" />
-        <option value="$PROJECT_DIR$/examples/index.js" />
         <option value="$PROJECT_DIR$/examples/server.js" />
+        <option value="$PROJECT_DIR$/examples/index.js" />
       </list>
     </option>
   </component>
@@ -613,7 +601,7 @@
       <workItem from="1497368371222" duration="14184000" />
       <workItem from="1497966943416" duration="5796000" />
       <workItem from="1497975386187" duration="16000" />
-      <workItem from="1498066071962" duration="5717000" />
+      <workItem from="1498066071962" duration="6739000" />
     </task>
     <servers />
   </component>
@@ -650,7 +638,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="238074000" />
+    <option name="totallyTimeSpent" value="239096000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1084,30 +1072,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/VitesseBA.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="28" column="39" selection-start-line="28" selection-start-column="39" selection-end-line="28" selection-end-column="39" />
-          <folding>
-            <element signature="n#LoginForm#0" expanded="false" />
-            <marker date="1498150579474" expanded="true" signature="1749:1803" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/examples/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="188">
-          <caret line="30" column="48" selection-start-line="30" selection-start-column="48" selection-end-line="30" selection-end-column="48" />
-          <folding>
-            <element signature="e#0#25#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/examples/server.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="499">
+        <state relative-caret-position="506">
           <caret line="1134" column="0" selection-start-line="1134" selection-start-column="0" selection-end-line="1134" selection-end-column="0" />
           <folding>
             <element signature="e#747#3135#0" expanded="false" />
@@ -1125,6 +1092,27 @@
             <element signature="e#24543#26334#0" expanded="false" />
             <element signature="e#26384#28773#0" expanded="false" />
             <element signature="e#28823#30614#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/examples/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="63" column="42" selection-start-line="63" selection-start-column="42" selection-end-line="63" selection-end-column="42" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/VitesseBA.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="33" column="42" selection-start-line="33" selection-start-column="42" selection-end-line="33" selection-end-column="42" />
+          <folding>
+            <element signature="n#LoginForm#0" expanded="false" />
+            <marker date="1498150579474" expanded="true" signature="1749:1803" ph="..." />
           </folding>
         </state>
       </provider>
