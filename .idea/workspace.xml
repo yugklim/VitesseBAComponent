@@ -4,6 +4,7 @@
     <list default="true" id="910b1bc5-a927-4f12-8a47-46e3f785f5b0" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/examples/index.js" afterPath="$PROJECT_DIR$/examples/index.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/examples/server.js" afterPath="$PROJECT_DIR$/examples/server.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/VitesseBA.js" afterPath="$PROJECT_DIR$/src/VitesseBA.js" />
     </list>
     <ignored path="VitesseBAComponent.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -20,6 +21,28 @@
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
   </component>
+  <component name="DockManager">
+    <window id="1">
+      <content type="file-editors">
+        <state>
+          <leaf>
+            <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
+              <entry file="file://$PROJECT_DIR$/examples/index.js">
+                <provider selected="true" editor-type-id="text-editor">
+                  <state relative-caret-position="188">
+                    <caret line="30" column="48" selection-start-line="30" selection-start-column="48" selection-end-line="30" selection-end-column="48" />
+                    <folding>
+                      <element signature="e#0#25#0" expanded="true" />
+                    </folding>
+                  </state>
+                </provider>
+              </entry>
+            </file>
+          </leaf>
+        </state>
+      </content>
+    </window>
+  </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FavoritesManager">
     <favorites_list name="VitesseBAComponent" />
@@ -30,51 +53,36 @@
         <entry file="file://$PROJECT_DIR$/src/VitesseBA.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="220">
-              <caret line="34" column="42" selection-start-line="34" selection-start-column="42" selection-end-line="34" selection-end-column="42" />
+              <caret line="28" column="39" selection-start-line="28" selection-start-column="39" selection-end-line="28" selection-end-column="39" />
               <folding>
                 <element signature="n#LoginForm#0" expanded="false" />
-                <marker date="1498067185505" expanded="true" signature="1777:1831" ph="..." />
+                <marker date="1498150579474" expanded="true" signature="1749:1803" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="server.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="server.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/examples/server.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="985">
-              <caret line="449" column="28" selection-start-line="449" selection-start-column="28" selection-end-line="449" selection-end-column="28" />
+            <state relative-caret-position="499">
+              <caret line="1134" column="0" selection-start-line="1134" selection-start-column="0" selection-end-line="1134" selection-end-column="0" />
               <folding>
                 <element signature="e#747#3135#0" expanded="false" />
-                <element signature="e#3186#4977#0" expanded="false" />
-                <element signature="e#5028#6819#0" expanded="false" />
-                <element signature="e#6870#8661#0" expanded="false" />
-                <element signature="e#8712#10503#0" expanded="false" />
-                <element signature="e#12397#14188#0" expanded="false" />
-                <element signature="e#14239#16030#0" expanded="false" />
-                <element signature="e#16081#18215#0" expanded="false" />
-                <element signature="e#18266#20057#0" expanded="false" />
-                <element signature="e#20108#21899#0" expanded="false" />
-                <element signature="e#21950#23741#0" expanded="false" />
-                <element signature="e#23793#25584#0" expanded="false" />
-                <element signature="e#25635#27426#0" expanded="false" />
-                <element signature="e#27477#29268#0" expanded="false" />
-                <element signature="e#29319#31110#0" expanded="false" />
-                <element signature="e#31161#32952#0" expanded="false" />
-                <element signature="e#33003#34794#0" expanded="false" />
-                <element signature="e#34839#36761#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/examples/index.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="606">
-              <caret line="49" column="17" selection-start-line="49" selection-start-column="17" selection-end-line="49" selection-end-column="17" />
-              <folding>
-                <element signature="e#0#25#0" expanded="true" />
+                <element signature="e#3185#4976#0" expanded="false" />
+                <element signature="e#5026#6817#0" expanded="false" />
+                <element signature="e#6867#9001#0" expanded="false" />
+                <element signature="e#9051#10842#0" expanded="false" />
+                <element signature="e#10892#12768#0" expanded="false" />
+                <element signature="e#12818#14609#0" expanded="false" />
+                <element signature="e#14659#16790#0" expanded="false" />
+                <element signature="e#16840#18631#0" expanded="false" />
+                <element signature="e#18681#20472#0" expanded="false" />
+                <element signature="e#20522#22652#0" expanded="false" />
+                <element signature="e#22702#24493#0" expanded="false" />
+                <element signature="e#24543#26334#0" expanded="false" />
+                <element signature="e#26384#28773#0" expanded="false" />
+                <element signature="e#28823#30614#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -216,8 +224,8 @@
         <option value="$PROJECT_DIR$/__tests__/components/VitesseBAField_Validator.js" />
         <option value="$PROJECT_DIR$/examples/index.html" />
         <option value="$PROJECT_DIR$/src/VitesseBA.js" />
-        <option value="$PROJECT_DIR$/examples/server.js" />
         <option value="$PROJECT_DIR$/examples/index.js" />
+        <option value="$PROJECT_DIR$/examples/server.js" />
       </list>
     </option>
   </component>
@@ -605,7 +613,7 @@
       <workItem from="1497368371222" duration="14184000" />
       <workItem from="1497966943416" duration="5796000" />
       <workItem from="1497975386187" duration="16000" />
-      <workItem from="1498066071962" duration="3630000" />
+      <workItem from="1498066071962" duration="5717000" />
     </task>
     <servers />
   </component>
@@ -642,7 +650,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="235987000" />
+    <option name="totallyTimeSpent" value="238074000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1079,47 +1087,44 @@
     <entry file="file://$PROJECT_DIR$/src/VitesseBA.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="220">
-          <caret line="34" column="42" selection-start-line="34" selection-start-column="42" selection-end-line="34" selection-end-column="42" />
+          <caret line="28" column="39" selection-start-line="28" selection-start-column="39" selection-end-line="28" selection-end-column="39" />
           <folding>
             <element signature="n#LoginForm#0" expanded="false" />
-            <marker date="1498067185505" expanded="true" signature="1777:1831" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/examples/server.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="985">
-          <caret line="449" column="28" selection-start-line="449" selection-start-column="28" selection-end-line="449" selection-end-column="28" />
-          <folding>
-            <element signature="e#747#3135#0" expanded="false" />
-            <element signature="e#3186#4977#0" expanded="false" />
-            <element signature="e#5028#6819#0" expanded="false" />
-            <element signature="e#6870#8661#0" expanded="false" />
-            <element signature="e#8712#10503#0" expanded="false" />
-            <element signature="e#12397#14188#0" expanded="false" />
-            <element signature="e#14239#16030#0" expanded="false" />
-            <element signature="e#16081#18215#0" expanded="false" />
-            <element signature="e#18266#20057#0" expanded="false" />
-            <element signature="e#20108#21899#0" expanded="false" />
-            <element signature="e#21950#23741#0" expanded="false" />
-            <element signature="e#23793#25584#0" expanded="false" />
-            <element signature="e#25635#27426#0" expanded="false" />
-            <element signature="e#27477#29268#0" expanded="false" />
-            <element signature="e#29319#31110#0" expanded="false" />
-            <element signature="e#31161#32952#0" expanded="false" />
-            <element signature="e#33003#34794#0" expanded="false" />
-            <element signature="e#34839#36761#0" expanded="false" />
+            <marker date="1498150579474" expanded="true" signature="1749:1803" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/examples/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="606">
-          <caret line="49" column="17" selection-start-line="49" selection-start-column="17" selection-end-line="49" selection-end-column="17" />
+        <state relative-caret-position="188">
+          <caret line="30" column="48" selection-start-line="30" selection-start-column="48" selection-end-line="30" selection-end-column="48" />
           <folding>
             <element signature="e#0#25#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/examples/server.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="499">
+          <caret line="1134" column="0" selection-start-line="1134" selection-start-column="0" selection-end-line="1134" selection-end-column="0" />
+          <folding>
+            <element signature="e#747#3135#0" expanded="false" />
+            <element signature="e#3185#4976#0" expanded="false" />
+            <element signature="e#5026#6817#0" expanded="false" />
+            <element signature="e#6867#9001#0" expanded="false" />
+            <element signature="e#9051#10842#0" expanded="false" />
+            <element signature="e#10892#12768#0" expanded="false" />
+            <element signature="e#12818#14609#0" expanded="false" />
+            <element signature="e#14659#16790#0" expanded="false" />
+            <element signature="e#16840#18631#0" expanded="false" />
+            <element signature="e#18681#20472#0" expanded="false" />
+            <element signature="e#20522#22652#0" expanded="false" />
+            <element signature="e#22702#24493#0" expanded="false" />
+            <element signature="e#24543#26334#0" expanded="false" />
+            <element signature="e#26384#28773#0" expanded="false" />
+            <element signature="e#28823#30614#0" expanded="false" />
           </folding>
         </state>
       </provider>
