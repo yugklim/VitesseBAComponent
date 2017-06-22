@@ -248,6 +248,216 @@ app.get("/getFields/GB/EUR", function(req, res) {
 
 })
 
+app.get("/getFields/GB/PLN", function(req, res) {
+  res.send(
+    [
+      {
+        "ConditionCode": "X07",
+        "Field": "Amount",
+        "FieldName": "Amount",
+        "FieldType": "Numeric",
+        "MaximumLength": 128,
+        "MinimumLength": 0,
+        "Options": "Mandatory",
+        "Path": "request.Amount"
+      },
+      {
+        "ConditionCode": "X07",
+        "Field": "SwiftCode",
+        "FieldName": "Swift Code",
+        "FieldType": "AlphaNumeric",
+        "MaximumLength": 11,
+        "MinimumLength": 8,
+        "Options": "Mandatory",
+        "Path": "request.Recipient.Account.Swift"
+      },
+      {
+        "ConditionCode": "X07",
+        "Field": "PaymentReference",
+        "FieldName": "Payment Reference",
+        "FieldType": "ExtendedAlphaNumeric",
+        "MaximumLength": 128,
+        "MinimumLength": 0,
+        "Options": "Mandatory",
+        "Path": "request.Recipient.RecipientReference"
+      },
+      {
+        "ConditionCode": "X07",
+        "Field": "BeneficiaryName",
+        "FieldName": "Beneficiary Name",
+        "FieldType": "Any",
+        "MaximumLength": 128,
+        "MinimumLength": 0,
+        "Options": "Mandatory",
+        "Path": "request.Recipient.Name"
+      },
+      {
+        "ConditionCode": "X07",
+        "Field": "AccountNumber",
+        "FieldName": "Account Number",
+        "FieldType": "AlphaNumeric",
+        "MaximumLength": 128,
+        "MinimumLength": 6,
+        "Options": "Conditional",
+        "Path": "request.Recipient.Account.AccountNumber"
+      },
+      {
+        "ConditionCode": "X07",
+        "Field": "Iban",
+        "FieldName": "IBAN",
+        "FieldType": "AlphaNumeric",
+        "MaximumLength": 31,
+        "MinimumLength": 15,
+        "Options": "Conditional",
+        "Path": "request.Recipient.Account.Iban"
+      }
+    ]
+
+  );
+  res.end();
+
+})
+
+app.get("/getFields/GB/NOK", function(req, res) {
+  res.send(
+    [
+      {
+        "ConditionCode": "X07",
+        "Field": "Amount",
+        "FieldName": "Amount",
+        "FieldType": "Numeric",
+        "MaximumLength": 128,
+        "MinimumLength": 0,
+        "Options": "Mandatory",
+        "Path": "request.Amount"
+      },
+      {
+        "ConditionCode": "X07",
+        "Field": "SwiftCode",
+        "FieldName": "Swift Code",
+        "FieldType": "AlphaNumeric",
+        "MaximumLength": 11,
+        "MinimumLength": 8,
+        "Options": "Mandatory",
+        "Path": "request.Recipient.Account.Swift"
+      },
+      {
+        "ConditionCode": "X07",
+        "Field": "PaymentReference",
+        "FieldName": "Payment Reference",
+        "FieldType": "ExtendedAlphaNumeric",
+        "MaximumLength": 128,
+        "MinimumLength": 0,
+        "Options": "Mandatory",
+        "Path": "request.Recipient.RecipientReference"
+      },
+      {
+        "ConditionCode": "X07",
+        "Field": "BeneficiaryName",
+        "FieldName": "Beneficiary Name",
+        "FieldType": "Any",
+        "MaximumLength": 128,
+        "MinimumLength": 0,
+        "Options": "Mandatory",
+        "Path": "request.Recipient.Name"
+      },
+      {
+        "ConditionCode": "X07",
+        "Field": "AccountNumber",
+        "FieldName": "Account Number",
+        "FieldType": "AlphaNumeric",
+        "MaximumLength": 128,
+        "MinimumLength": 6,
+        "Options": "Conditional",
+        "Path": "request.Recipient.Account.AccountNumber"
+      },
+      {
+        "ConditionCode": "X07",
+        "Field": "Iban",
+        "FieldName": "IBAN",
+        "FieldType": "AlphaNumeric",
+        "MaximumLength": 31,
+        "MinimumLength": 15,
+        "Options": "Conditional",
+        "Path": "request.Recipient.Account.Iban"
+      }
+    ]
+
+  );
+  res.end();
+
+})
+
+app.get("/getFields/GB/SEK", function(req, res) {
+  res.send(
+    [
+      {
+        "ConditionCode": "X07",
+        "Field": "Amount",
+        "FieldName": "Amount",
+        "FieldType": "Numeric",
+        "MaximumLength": 128,
+        "MinimumLength": 0,
+        "Options": "Mandatory",
+        "Path": "request.Amount"
+      },
+      {
+        "ConditionCode": "X07",
+        "Field": "SwiftCode",
+        "FieldName": "Swift Code",
+        "FieldType": "AlphaNumeric",
+        "MaximumLength": 11,
+        "MinimumLength": 8,
+        "Options": "Mandatory",
+        "Path": "request.Recipient.Account.Swift"
+      },
+      {
+        "ConditionCode": "X07",
+        "Field": "PaymentReference",
+        "FieldName": "Payment Reference",
+        "FieldType": "ExtendedAlphaNumeric",
+        "MaximumLength": 128,
+        "MinimumLength": 0,
+        "Options": "Mandatory",
+        "Path": "request.Recipient.RecipientReference"
+      },
+      {
+        "ConditionCode": "X07",
+        "Field": "BeneficiaryName",
+        "FieldName": "Beneficiary Name",
+        "FieldType": "Any",
+        "MaximumLength": 128,
+        "MinimumLength": 0,
+        "Options": "Mandatory",
+        "Path": "request.Recipient.Name"
+      },
+      {
+        "ConditionCode": "X07",
+        "Field": "AccountNumber",
+        "FieldName": "Account Number",
+        "FieldType": "AlphaNumeric",
+        "MaximumLength": 128,
+        "MinimumLength": 6,
+        "Options": "Conditional",
+        "Path": "request.Recipient.Account.AccountNumber"
+      },
+      {
+        "ConditionCode": "X07",
+        "Field": "Iban",
+        "FieldName": "IBAN",
+        "FieldType": "AlphaNumeric",
+        "MaximumLength": 31,
+        "MinimumLength": 15,
+        "Options": "Conditional",
+        "Path": "request.Recipient.Account.Iban"
+      }
+    ]
+
+  );
+  res.end();
+
+})
+
 
 app.get("/getFields/FR/GBP", function(req, res) {
   res.send(
@@ -471,6 +681,216 @@ app.get("/getFields/FR/EUR", function(req, res) {
 
 })
 
+app.get("/getFields/FR/PLN", function(req, res) {
+  res.send(
+    [
+      {
+        "ConditionCode": "X07",
+        "Field": "Amount",
+        "FieldName": "Amount",
+        "FieldType": "Numeric",
+        "MaximumLength": 128,
+        "MinimumLength": 0,
+        "Options": "Mandatory",
+        "Path": "request.Amount"
+      },
+      {
+        "ConditionCode": "X07",
+        "Field": "SwiftCode",
+        "FieldName": "Swift Code",
+        "FieldType": "AlphaNumeric",
+        "MaximumLength": 11,
+        "MinimumLength": 8,
+        "Options": "Mandatory",
+        "Path": "request.Recipient.Account.Swift"
+      },
+      {
+        "ConditionCode": "X07",
+        "Field": "PaymentReference",
+        "FieldName": "Payment Reference",
+        "FieldType": "ExtendedAlphaNumeric",
+        "MaximumLength": 128,
+        "MinimumLength": 0,
+        "Options": "Mandatory",
+        "Path": "request.Recipient.RecipientReference"
+      },
+      {
+        "ConditionCode": "X07",
+        "Field": "BeneficiaryName",
+        "FieldName": "Beneficiary Name",
+        "FieldType": "Any",
+        "MaximumLength": 128,
+        "MinimumLength": 0,
+        "Options": "Mandatory",
+        "Path": "request.Recipient.Name"
+      },
+      {
+        "ConditionCode": "X07",
+        "Field": "AccountNumber",
+        "FieldName": "Account Number",
+        "FieldType": "AlphaNumeric",
+        "MaximumLength": 128,
+        "MinimumLength": 6,
+        "Options": "Conditional",
+        "Path": "request.Recipient.Account.AccountNumber"
+      },
+      {
+        "ConditionCode": "X07",
+        "Field": "Iban",
+        "FieldName": "IBAN",
+        "FieldType": "AlphaNumeric",
+        "MaximumLength": 31,
+        "MinimumLength": 15,
+        "Options": "Conditional",
+        "Path": "request.Recipient.Account.Iban"
+      }
+    ]
+
+  );
+  res.end();
+
+})
+
+app.get("/getFields/FR/NOK", function(req, res) {
+  res.send(
+    [
+      {
+        "ConditionCode": "X07",
+        "Field": "Amount",
+        "FieldName": "Amount",
+        "FieldType": "Numeric",
+        "MaximumLength": 128,
+        "MinimumLength": 0,
+        "Options": "Mandatory",
+        "Path": "request.Amount"
+      },
+      {
+        "ConditionCode": "X07",
+        "Field": "SwiftCode",
+        "FieldName": "Swift Code",
+        "FieldType": "AlphaNumeric",
+        "MaximumLength": 11,
+        "MinimumLength": 8,
+        "Options": "Mandatory",
+        "Path": "request.Recipient.Account.Swift"
+      },
+      {
+        "ConditionCode": "X07",
+        "Field": "PaymentReference",
+        "FieldName": "Payment Reference",
+        "FieldType": "ExtendedAlphaNumeric",
+        "MaximumLength": 128,
+        "MinimumLength": 0,
+        "Options": "Mandatory",
+        "Path": "request.Recipient.RecipientReference"
+      },
+      {
+        "ConditionCode": "X07",
+        "Field": "BeneficiaryName",
+        "FieldName": "Beneficiary Name",
+        "FieldType": "Any",
+        "MaximumLength": 128,
+        "MinimumLength": 0,
+        "Options": "Mandatory",
+        "Path": "request.Recipient.Name"
+      },
+      {
+        "ConditionCode": "X07",
+        "Field": "AccountNumber",
+        "FieldName": "Account Number",
+        "FieldType": "AlphaNumeric",
+        "MaximumLength": 128,
+        "MinimumLength": 6,
+        "Options": "Conditional",
+        "Path": "request.Recipient.Account.AccountNumber"
+      },
+      {
+        "ConditionCode": "X07",
+        "Field": "Iban",
+        "FieldName": "IBAN",
+        "FieldType": "AlphaNumeric",
+        "MaximumLength": 31,
+        "MinimumLength": 15,
+        "Options": "Conditional",
+        "Path": "request.Recipient.Account.Iban"
+      }
+    ]
+
+  );
+  res.end();
+
+})
+
+app.get("/getFields/FR/SEK", function(req, res) {
+  res.send(
+    [
+      {
+        "ConditionCode": "X07",
+        "Field": "Amount",
+        "FieldName": "Amount",
+        "FieldType": "Numeric",
+        "MaximumLength": 128,
+        "MinimumLength": 0,
+        "Options": "Mandatory",
+        "Path": "request.Amount"
+      },
+      {
+        "ConditionCode": "X07",
+        "Field": "SwiftCode",
+        "FieldName": "Swift Code",
+        "FieldType": "AlphaNumeric",
+        "MaximumLength": 11,
+        "MinimumLength": 8,
+        "Options": "Mandatory",
+        "Path": "request.Recipient.Account.Swift"
+      },
+      {
+        "ConditionCode": "X07",
+        "Field": "PaymentReference",
+        "FieldName": "Payment Reference",
+        "FieldType": "ExtendedAlphaNumeric",
+        "MaximumLength": 128,
+        "MinimumLength": 0,
+        "Options": "Mandatory",
+        "Path": "request.Recipient.RecipientReference"
+      },
+      {
+        "ConditionCode": "X07",
+        "Field": "BeneficiaryName",
+        "FieldName": "Beneficiary Name",
+        "FieldType": "Any",
+        "MaximumLength": 128,
+        "MinimumLength": 0,
+        "Options": "Mandatory",
+        "Path": "request.Recipient.Name"
+      },
+      {
+        "ConditionCode": "X07",
+        "Field": "AccountNumber",
+        "FieldName": "Account Number",
+        "FieldType": "AlphaNumeric",
+        "MaximumLength": 128,
+        "MinimumLength": 6,
+        "Options": "Conditional",
+        "Path": "request.Recipient.Account.AccountNumber"
+      },
+      {
+        "ConditionCode": "X07",
+        "Field": "Iban",
+        "FieldName": "IBAN",
+        "FieldType": "AlphaNumeric",
+        "MaximumLength": 31,
+        "MinimumLength": 15,
+        "Options": "Conditional",
+        "Path": "request.Recipient.Account.Iban"
+      }
+    ]
+
+  );
+  res.end();
+
+})
+
 
 app.get("/getFields/AU/GBP", function(req, res) {
   res.send(
@@ -613,6 +1033,216 @@ app.get("/getFields/AU/USD", function(req, res) {
 })
 
 app.get("/getFields/AU/EUR", function(req, res) {
+  res.send(
+    [
+      {
+        "ConditionCode": "X07",
+        "Field": "Amount",
+        "FieldName": "Amount",
+        "FieldType": "Numeric",
+        "MaximumLength": 128,
+        "MinimumLength": 0,
+        "Options": "Mandatory",
+        "Path": "request.Amount"
+      },
+      {
+        "ConditionCode": "X07",
+        "Field": "SwiftCode",
+        "FieldName": "Swift Code",
+        "FieldType": "AlphaNumeric",
+        "MaximumLength": 11,
+        "MinimumLength": 8,
+        "Options": "Mandatory",
+        "Path": "request.Recipient.Account.Swift"
+      },
+      {
+        "ConditionCode": "X07",
+        "Field": "PaymentReference",
+        "FieldName": "Payment Reference",
+        "FieldType": "ExtendedAlphaNumeric",
+        "MaximumLength": 128,
+        "MinimumLength": 0,
+        "Options": "Mandatory",
+        "Path": "request.Recipient.RecipientReference"
+      },
+      {
+        "ConditionCode": "X07",
+        "Field": "BeneficiaryName",
+        "FieldName": "Beneficiary Name",
+        "FieldType": "Any",
+        "MaximumLength": 128,
+        "MinimumLength": 0,
+        "Options": "Mandatory",
+        "Path": "request.Recipient.Name"
+      },
+      {
+        "ConditionCode": "X07",
+        "Field": "AccountNumber",
+        "FieldName": "Account Number",
+        "FieldType": "AlphaNumeric",
+        "MaximumLength": 128,
+        "MinimumLength": 6,
+        "Options": "Conditional",
+        "Path": "request.Recipient.Account.AccountNumber"
+      },
+      {
+        "ConditionCode": "X07",
+        "Field": "Iban",
+        "FieldName": "IBAN",
+        "FieldType": "AlphaNumeric",
+        "MaximumLength": 31,
+        "MinimumLength": 15,
+        "Options": "Conditional",
+        "Path": "request.Recipient.Account.Iban"
+      }
+    ]
+
+  );
+  res.end();
+
+})
+
+app.get("/getFields/AU/PLN", function(req, res) {
+  res.send(
+    [
+      {
+        "ConditionCode": "X07",
+        "Field": "Amount",
+        "FieldName": "Amount",
+        "FieldType": "Numeric",
+        "MaximumLength": 128,
+        "MinimumLength": 0,
+        "Options": "Mandatory",
+        "Path": "request.Amount"
+      },
+      {
+        "ConditionCode": "X07",
+        "Field": "SwiftCode",
+        "FieldName": "Swift Code",
+        "FieldType": "AlphaNumeric",
+        "MaximumLength": 11,
+        "MinimumLength": 8,
+        "Options": "Mandatory",
+        "Path": "request.Recipient.Account.Swift"
+      },
+      {
+        "ConditionCode": "X07",
+        "Field": "PaymentReference",
+        "FieldName": "Payment Reference",
+        "FieldType": "ExtendedAlphaNumeric",
+        "MaximumLength": 128,
+        "MinimumLength": 0,
+        "Options": "Mandatory",
+        "Path": "request.Recipient.RecipientReference"
+      },
+      {
+        "ConditionCode": "X07",
+        "Field": "BeneficiaryName",
+        "FieldName": "Beneficiary Name",
+        "FieldType": "Any",
+        "MaximumLength": 128,
+        "MinimumLength": 0,
+        "Options": "Mandatory",
+        "Path": "request.Recipient.Name"
+      },
+      {
+        "ConditionCode": "X07",
+        "Field": "AccountNumber",
+        "FieldName": "Account Number",
+        "FieldType": "AlphaNumeric",
+        "MaximumLength": 128,
+        "MinimumLength": 6,
+        "Options": "Conditional",
+        "Path": "request.Recipient.Account.AccountNumber"
+      },
+      {
+        "ConditionCode": "X07",
+        "Field": "Iban",
+        "FieldName": "IBAN",
+        "FieldType": "AlphaNumeric",
+        "MaximumLength": 31,
+        "MinimumLength": 15,
+        "Options": "Conditional",
+        "Path": "request.Recipient.Account.Iban"
+      }
+    ]
+
+  );
+  res.end();
+
+})
+
+app.get("/getFields/AU/NOK", function(req, res) {
+  res.send(
+    [
+      {
+        "ConditionCode": "X07",
+        "Field": "Amount",
+        "FieldName": "Amount",
+        "FieldType": "Numeric",
+        "MaximumLength": 128,
+        "MinimumLength": 0,
+        "Options": "Mandatory",
+        "Path": "request.Amount"
+      },
+      {
+        "ConditionCode": "X07",
+        "Field": "SwiftCode",
+        "FieldName": "Swift Code",
+        "FieldType": "AlphaNumeric",
+        "MaximumLength": 11,
+        "MinimumLength": 8,
+        "Options": "Mandatory",
+        "Path": "request.Recipient.Account.Swift"
+      },
+      {
+        "ConditionCode": "X07",
+        "Field": "PaymentReference",
+        "FieldName": "Payment Reference",
+        "FieldType": "ExtendedAlphaNumeric",
+        "MaximumLength": 128,
+        "MinimumLength": 0,
+        "Options": "Mandatory",
+        "Path": "request.Recipient.RecipientReference"
+      },
+      {
+        "ConditionCode": "X07",
+        "Field": "BeneficiaryName",
+        "FieldName": "Beneficiary Name",
+        "FieldType": "Any",
+        "MaximumLength": 128,
+        "MinimumLength": 0,
+        "Options": "Mandatory",
+        "Path": "request.Recipient.Name"
+      },
+      {
+        "ConditionCode": "X07",
+        "Field": "AccountNumber",
+        "FieldName": "Account Number",
+        "FieldType": "AlphaNumeric",
+        "MaximumLength": 128,
+        "MinimumLength": 6,
+        "Options": "Conditional",
+        "Path": "request.Recipient.Account.AccountNumber"
+      },
+      {
+        "ConditionCode": "X07",
+        "Field": "Iban",
+        "FieldName": "IBAN",
+        "FieldType": "AlphaNumeric",
+        "MaximumLength": 31,
+        "MinimumLength": 15,
+        "Options": "Conditional",
+        "Path": "request.Recipient.Account.Iban"
+      }
+    ]
+
+  );
+  res.end();
+
+})
+
+app.get("/getFields/AU/SEK", function(req, res) {
   res.send(
     [
       {

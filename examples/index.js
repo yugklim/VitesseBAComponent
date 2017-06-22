@@ -45,6 +45,9 @@ import  VitesseBA  from '../src/VitesseBA.js'
       <option>GBP</option>
       <option>USD</option>
       <option>EUR</option>
+      <option>PLN</option>
+      <option>NOK</option>
+      <option>SEK</option>
     </select>
   </div>};
   const selector = <selectorComponent></selectorComponent>
