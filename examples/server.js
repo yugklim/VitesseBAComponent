@@ -1133,6 +1133,41 @@ app.get("/getFields/SE/USD", function(req, res) {
 
 })
 
+app.get("/getFields", function(req, res) {
+  let https = require('https');
+  let currency = req.query.currency;
+
+  var options = {
+    host: 'staging-api.vitessepsp.com',
+    path: `/api/rules/${currency}`,
+    method: 'GET',
+    headers: {
+      'Content-Type': 'application/json',
+
+    }
+  };
+
+  callback = function(response) {
+    var str = '';
+
+    //another chunk of data has been recieved, so append it to `str`
+    response.on('data', function (chunk) {
+      str += chunk;
+    });
+
+    //the whole response has been recieved, so we just print it out here
+    response.on('end', function () {
+      res.send(str);
+      res.end();
+    });
+  }
+
+  https.request(options, callback).end();
+
+
+
+})
+
 app.listen(port, function(error) {
   if (error) {
     console.error(error)
