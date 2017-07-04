@@ -28,7 +28,7 @@ export default class VitesseBA extends Component {
     //let countryCurrency = this.props.countryCurrency;
     //fetch(`/getFields/${countryCurrency}`,
     //fetch('https://staging-api.vitessepsp.com/api/rules/RU/RUB',
-    fetch(`/getFields?currency=${this.props.countryCurrency}`,
+    fetch(`${this.props.url}${this.props.countryCurrency}`,
       {
         method: 'get'
       }).then((response) => {

@@ -1143,7 +1143,6 @@ app.get("/getFields", function(req, res) {
     method: 'GET',
     headers: {
       'Content-Type': 'application/json',
-
     }
   };
 

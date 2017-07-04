@@ -23,12 +23,14 @@ import  VitesseBA  from '../src/VitesseBA.js'
 //   }
 // }, document.getElementById('vitesseBA'));
 
+const getFieldsUrl = '/getFields/';
+//'/getFields?currency=';
 
-  const selectorComponent = () => {
+const selectorComponent = () => {
     let countrySelect;
     let renderVitesseBA = function() {
-      let countryCurrency = countrySelect.value;
-      const element = <VitesseBA countryCurrency={countryCurrency} ></VitesseBA>;
+    let countryCurrency = countrySelect.value;
+    const element = <VitesseBA url={getFieldsUrl} countryCurrency={countryCurrency} ></VitesseBA>;
       render(element,  document.getElementById('vitesseBA'));
     };
 
@@ -61,7 +63,7 @@ render({
     type: selectorComponent
   },  document.getElementById('selector'));
 
-render(<VitesseBA countryCurrency={'GB/GBP'}></VitesseBA>,  document.getElementById('vitesseBA'));
+render(<VitesseBA url={getFieldsUrl} countryCurrency={'GB/GBP'}></VitesseBA>,  document.getElementById('vitesseBA'));
 
 
 // /renderVitesseBA();
