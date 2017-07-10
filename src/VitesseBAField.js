@@ -2,6 +2,7 @@ import React from 'react'
 import InputMask from 'react-input-mask';
 var _ = require('lodash')
 import PropTypes from 'prop-types';
+import Radium from 'radium';
 
 // export default class VitesseBAField extends Component {
 //
@@ -20,7 +21,40 @@ import PropTypes from 'prop-types';
 
 //const Button = ({ color, children }) => <button style={{ background: color }}>{children}</button>;
 
+let getStyles = function() {
+  const status = {
+    notification: '#0074D9',
+    success: '#27AE60',
+    error: '#E74C3C'
+  }
 
+  return {
+    alert: {
+      position: 'relative',
+      width: '100%',
+      padding: '5px',
+      borderRadius: '3px',
+      backgroundColor: status.notification,
+      color: 'white',
+      textAlign: 'center',
+      success: {
+        backgroundColor: status.success
+      },
+      error: {
+        backgroundColor: status.error
+      }
+    },
+    closeButton: {
+      position: 'absolute',
+      right: '10px',
+  ':hover': {
+    cursor: 'pointer'
+}
+}
+};
+}
+
+const styles = getStyles();
 
 const VitesseBAField = ({ pars, validator }) =>
 {
@@ -54,7 +88,7 @@ const VitesseBAField = ({ pars, validator }) =>
 
       return validator?
         (
-        <div>
+        <div style={[styles.alert]}>
           <label htmlFor={validator.id} >
             {validator.label}
           </label>
@@ -82,4 +116,4 @@ VitesseBAField.propTypes = {
   validator: PropTypes.object
 };
 
-exports.VitesseBAField = VitesseBAField;
+exports.VitesseBAField = Radium(VitesseBAField);

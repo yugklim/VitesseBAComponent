@@ -3,6 +3,7 @@ import { observer } from 'mobx-react';
 import { getValidators } from './utilities/validation'
 var VitesseBAField = require('./VitesseBAField').VitesseBAField
 import PropTypes from 'prop-types';
+import Radium from 'radium';
 
 const VitesseBAFields = observer(
   ({ fields, form }) =>
@@ -43,4 +44,4 @@ VitesseBAFields.propTypes = {
   form: PropTypes.object
 };
 
-export default VitesseBAFields
+export default Radium(VitesseBAFields)
