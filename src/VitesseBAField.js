@@ -40,17 +40,13 @@ let getStyles = function() {
       success: {
         backgroundColor: status.success
       },
+      ':hover': {
+        boxShadow: '0 3px 0 rgba(0,0,0,0.2)'
+      },
       error: {
         backgroundColor: status.error
       }
-    },
-    closeButton: {
-      position: 'absolute',
-      right: '10px',
-  ':hover': {
-    cursor: 'pointer'
-}
-}
+    }
 };
 }
 

@@ -5,6 +5,7 @@ import MobxReactForm from 'mobx-react-form';
 import validatorjs from 'validatorjs';
 var getFormFields = require('./utilities/validation').getFormFields
 var extractBAFields = require('./utilities/extractBAChunks').extractBAChunks
+import { StyleRoot } from 'radium';
 
 
 class LoginForm extends MobxReactForm {
@@ -53,27 +54,17 @@ export default class VitesseBA extends Component {
             const plugins = { dvr: validatorjs };
             const form = new LoginForm({ fields: getFormFields(baFields) }, { plugins });
 
+            let pageStyle = {
+              color: 'green'
+            };
+
             ReactDOM.render(
               // React.createElement('VitesseBAFields',null,null),
-              <VitesseBAFields
-                fields={baFields}
-
-
-                styles={{
-                  base: {
-                    padding: '1.5em 2em',
-                    border: '0px',
-                    cursor: 'pointer',
-                    fontSize: '11rem',
-                    fontWeight: 900,
-                    color: 'red'
-                  }
-                }}
-
-
-                form={form}>
-
-              </VitesseBAFields>,
+              <StyleRoot style={pageStyle}>
+                <div>AA
+                <VitesseBAFields fields={baFields} form={form}></VitesseBAFields>
+                </div>
+              </StyleRoot>,
               document.getElementById('vitesseBAFields')
             );
 
