@@ -54,14 +54,12 @@ export default class VitesseBA extends Component {
             const plugins = { dvr: validatorjs };
             const form = new LoginForm({ fields: getFormFields(baFields) }, { plugins });
 
-            let pageStyle = {
-              color: 'green'
-            };
+            let pageStyle = {};
 
             ReactDOM.render(
               // React.createElement('VitesseBAFields',null,null),
               <StyleRoot style={pageStyle}>
-                <div>AA
+                <div>
                 <VitesseBAFields fields={baFields} form={form}></VitesseBAFields>
                 </div>
               </StyleRoot>,

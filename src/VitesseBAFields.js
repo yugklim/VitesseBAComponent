@@ -1,7 +1,8 @@
 import React from 'react'
 import { observer } from 'mobx-react';
 import { getValidators } from './utilities/validation'
-var VitesseBAField = require('./VitesseBAField').VitesseBAField
+//var VitesseBAField = require('./VitesseBAField').VitesseBAField
+var VitesseBAFieldInherited = require('./VitesseBAFieldInherited').VitesseBAFieldInherited
 import PropTypes from 'prop-types';
 import Radium from 'radium';
 
@@ -22,7 +23,7 @@ const VitesseBAFields = observer(
           {
             fields.map(function (field, idx) {
               //return (<div>{val.Path} -> <VitesseBAField pars={val} form={form}></VitesseBAField></div>);
-              return (<VitesseBAField pars={field} validator={validators[field.Field]} idx={idx} form={form}></VitesseBAField>);
+              return (<VitesseBAFieldInherited pars={field} validator={validators[field.Field]} idx={idx} form={form}></VitesseBAFieldInherited>);
             })
           }
 
