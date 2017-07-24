@@ -9,10 +9,10 @@ module.exports = {
     '.\\index.js'
   ],
   resolve: {
-    modulesDirectories: [
-      path.join(__dirname, "./node_modules"),
-      path.join(__dirname, "../src/node_modules")
-    ]
+    modules: [
+            path.join(__dirname, "./node_modules"),
+            path.join(__dirname, "../src/node_modules")
+         ]
   },
   output: {
     path: path.join(__dirname, '../bundle'),
@@ -21,32 +21,34 @@ module.exports = {
   },
 
   plugins: [
-    new webpack.optimize.OccurenceOrderPlugin(),
     new webpack.HotModuleReplacementPlugin(),
-    new webpack.NoErrorsPlugin()
+    new webpack.NoEmitOnErrorsPlugin()
   ],
 
   module: {
-    preLoaders: [
+    rules: [
       {
         test: /\.js$/,
-        loaders: ['eslint-loader'],
-        include: [
-          path.resolve(path.normalize(__dirname + '\\..'), "src")
-        ],
-        exclude: /node_modules/
-      }
-    ],
-    loaders: [
-      {
-        loaders: ['react-hot', 'babel-loader'],
+        enforce: 'pre',
+        exclude: /node_modules/,
         include: [
           path.resolve(path.normalize(__dirname )),
           path.resolve(path.normalize(__dirname + '\\..'), "src")
         ],
-        exclude: /node_modules/,
+        use: [
+          {
+            loader: 'eslint-loader'
+          }
+        ]
+      },
+      {
         test: /\.js$/,
-        plugins: ['transform-runtime']
+        loaders: ['react-hot-loader', 'babel-loader'],
+        include: [
+          path.resolve(path.normalize(__dirname )),
+          path.resolve(path.normalize(__dirname + '\\..'), "src")
+        ],
+        exclude: /node_modules/
       }
     ]
   }

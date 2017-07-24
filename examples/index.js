@@ -36,7 +36,7 @@ const selectorComponent = () => {
 
     return <div>
     Country:
-    <select id="country" onChange={renderVitesseBA} ref={(select) => { countrySelect = select; }}>
+    <select id='country' onChange={renderVitesseBA} ref={(select) => { countrySelect = select; }}>
       <option>GB/GBP</option>
       <option>GB/EUR</option>
       <option>AU/EUR</option>
@@ -55,10 +55,11 @@ const selectorComponent = () => {
       <option>SE/USD</option>
     </select>
   </div>};
-  const selector = <selectorComponent></selectorComponent>
+  //const selector = <selectorComponent></selectorComponent>
     // doesnt work
     //render(selector,  document.getElementById('selector'));
 render({
+
     $$typeof: Symbol.for('react.element'),
     type: selectorComponent
   },  document.getElementById('selector'));
